@@ -1,0 +1,15 @@
+﻿.ticker-wrapper.has-js{width:980px;height:27px;display:block;background-color:#312c29;font-size:11px;}
+.ticker{width:900px;height:27px;display:block;position:relative;overflow:hidden;background-color:#312c29;}
+.ticker-title{padding-top:8px;padding-left:20px;color:#000000;font-weight:bold;background-color:#eeeeee;text-transform:uppercase;height:27px;width:80px;}
+.ticker-content{margin:0px;padding-top:6px;padding-left:20px;position:absolute;color:#ffffff;font-weight:bold;background-color:#312c29;overflow:hidden;white-space:nowrap;line-height:1.2em;}
+.ticker-content:focus{background:none;}
+.ticker-content a:hover{text-decoration:underline;color:#0D3059;}
+.ticker-swipe{padding-top:9px;position:absolute;top:0px;background-color:#312c29;display:block;width:600px;height:23px;}
+.ticker-swipe span{margin-left:1px;background-color:#312c29;border-bottom:1px solid #312c29;height:12px;width:7px;display:block;}
+.ticker-controls{padding:5px 0px 0px 0px;margin:0px;list-style-type:none;float:left;height:28px;width:70px;}
+.ticker-controls li{padding:0px;margin-left:5px;float:left;cursor:pointer;height:16px;width:16px;display:block;}
+.ticker-controls li.jnt-prev{background-image:url('../images/controls_new.png');background-position:50px 52px;}
+.ticker-controls li.jnt-next{background-image:url('../images/controls_new.png');background-position:25px 52px;}
+.left .ticker-swipe{}
+.left .ticker-controls, .left .ticker-content, .left .ticker-title, .left .ticker{float:left;}
+.left .ticker-controls{padding-left:6px;}

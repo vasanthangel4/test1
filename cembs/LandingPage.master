@@ -1,0 +1,125 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LandingPage.master.cs"
+    Debug="false" Inherits="LandingPage" %>
+
+<%@ Register TagName="mainmenu" TagPrefix="menu" Src="~/UserControls/mainmenu.ascx" %>
+<%@ Register TagName="extendedmenu" TagPrefix="exmenu" Src="~/UserControls/ExtendedMenu.ascx" %>
+<%@ Register TagPrefix="footer" TagName="cem_landingfooter" Src="~/UserControls/LandingPageFooter.ascx" %>
+<%@ Register TagPrefix="cem" TagName="sitemap" Src="Sitemap.ascx" %>
+<%@ Register TagPrefix="uhead" TagName="userhead" Src="~/UserControls/header.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="icon" href="Images/titlelogo.png" type="image/png" />
+    <title id="Title1" runat="server" visible="false"></title>
+    <link href="Styles/cem_styles.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MetroStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/bg_change.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MetroJs.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/print.css" rel="stylesheet" type="text/css" media="print" />
+    <link href="Styles/mobile.css" rel="stylesheet" type="text/css" />
+    <link href="JMetro/css/jquery-ui.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+        #wrapper .header .header_rightContent
+        {
+            width: 100% !important;
+        }
+        #easyTooltip_facebook, #easyTooltip_twitter, #easyTooltip_google, #easyTooltip_linkedin, #easyTooltip_slideshare
+        {
+            padding: 0px 5px 5px 5px;
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+        #easyTooltip_flickr
+        {
+            padding: 0px 5px 5px 5px;
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+        #easyTooltip
+        {
+            padding: 0px 5px 5px 5px;
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+        a
+        {
+            color: #fff;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="myGallery">
+        <img src="Images/MetroStyle/bg.jpg" width="1200" height="768" alt="background" />
+    </div>
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="/" id="logolink">
+                    <img src="Images/logo.png" width="193" height="62" class="noImgBorder" alt="CEM Business Solutions, ERP Consultant, MS Dynamics" /></a>
+            </div>
+            <div class="header_rightContent">
+                <div class="toplinks">
+                </div>
+                <div class="logolinks">
+                    <%--<div class="float_left">
+                        <img src="~/CEMAwards/countrypartner-uae-2010_small.jpg" id="img4" width="120" height="56"
+                            alt="country partner" runat="server" style="margin-right: 30px;" />
+                    </div>
+                    <div class="float_left">
+                        <img src="~/CEMAwards/fastestgrowing2012_small.jpg" id="img3" width="120" height="56"
+                            alt="fastest growing" runat="server" style="margin-right: 30px;" />
+                    </div>--%>
+                    <div class="float_left">
+                        <img src="~/Images/microsoft_gold_partner.jpg" id="Img1" width="120" height="56"
+                            alt="Gold partner" runat="server" style="margin-right: 30px;" />
+                    </div>
+                    <div class="float_left">
+                        <img src="Images/cfmd_logo.png" id="Img2" class="noImgBorder" width="123" height="64"
+                            alt="CFMD" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <asp:ContentPlaceHolder ID="landing_ContentPlaceholder" runat="server">
+        </asp:ContentPlaceHolder>
+        <footer:cem_landingfooter ID="cemlandingfooter" runat="server" />
+    </div>
+    </form>
+    <script type="text/javascript">        var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">        stLight.options({ publisher: "5ff7f6c6-c278-4c6c-ad11-772b1fe01c40", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+    <!-- google analytics -->
+    <script type="text/javascript">        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-36372906-1']); _gaq.push(['_setDomainName', 'cembs.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+    <!-- end google analytics -->
+</body>
+</html>

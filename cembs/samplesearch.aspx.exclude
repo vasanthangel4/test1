@@ -1,0 +1,53 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="samplesearch.aspx.cs" Inherits="samplesearch" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    .search-headline-table
+    {
+        display:none;
+    }
+    #ffsponsors
+    {
+        display:none;
+    }
+    </style>
+</head>
+<body>
+    <div>
+        <!-- start of freefind search box html -->
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tr>
+                <td colspan="2" style="font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;">
+                    <form style="margin: 0px; margin-top: 4px;" action="http://search.freefind.com/find.html"
+                    method="get" accept-charset="utf-8" target="_self">
+                    <input type="hidden" name="si" value="8762694">
+                    <input type="hidden" name="pid" value="r">
+                    <input type="hidden" name="n" value="0">
+                    <input type="hidden" name="_charset_" value="">
+                    <input type="hidden" name="bcd" value="&#247;">
+                    <input type="text" name="query" size="15">
+                    <input type="submit" value="search">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: left; font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;
+                    padding-top: 4px;">
+                    <a style="text-decoration: none; color: gray;" href="http://www.freefind.com">search
+                        engine</a><a style="text-decoration: none; color: gray;" href="http://www.freefind.com">
+                            by <span style="color: #606060;">freefind</span></a>
+                </td>
+                <td style="text-align: right; font-family: Arial, Helvetica, sans-serif; font-size: 7.5pt;
+                    padding-top: 4px;">
+                    <a href="http://search.freefind.com/find.html?si=8762694&amp;pid=a">advanced</a>
+                </td>
+            </tr>
+        </table>
+        <!-- end of freefind search box html -->
+    </div>
+</body>
+</html>

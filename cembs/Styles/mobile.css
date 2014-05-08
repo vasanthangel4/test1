@@ -1,0 +1,233 @@
+﻿
+* {
+    -moz-box-sizing: border-box;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+audio, canvas, video {
+    display: inline-block;
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+*::-moz-selection {
+    background: none repeat scroll 0 0 #B3D4FC;
+    text-shadow: none;
+}
+.chromeframe {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #000000;
+    margin: 0.2em 0;
+    padding: 0.2em 0;
+}
+@-moz-keyframes spin {
+}
+@-moz-keyframes spin {
+}
+@-moz-document url-prefix("") 
+{
+}
+@media only screen and (max-width: 1100px) {
+}
+@media only screen and (max-width: 940px) {
+}
+@media only screen and (max-width: 860px) {
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 600px) {
+}
+@media only screen and (max-width: 480px) {
+}
+@media not all {
+}
+@media not all, only screen and (min-resolution: 144dpi) {
+}
+
+@media only screen and (max-width: 767px) {
+}
+@media screen and (max-width: 478px) 	{
+	h1 { font-size: 70px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+    #wrapper{width:100%}
+    #wrapper .header{width:100%;}
+    #smoothmenu1{background:none repeat scroll 0 0 #106AFF;}
+    #mega-menu-1{margin-left:0 !important;}
+    #mega-menu .sub-container, .mega{display:none !important;}
+    #mega-menu-1 li {float:none;}
+    #mega-menu-1{height:100%;}
+    #wrapper .menu{height:100% !important;}
+    #mega-menu-1 li a{float:none;}
+    #wrapper .extended_menu{width:100%;}
+    #wrapper .cemtext .back{width:100%;}
+     #metrostyle .leftboxes{clear:left;float:none !important; position:inherit !important; left:0 !important; margin-bottom:10px !important;}
+    #sitemapfooter_div{width:100% !important;}
+    #wrapper .extended_menu{width:100%}
+    #sitemapfooter_div .social{display:none;}
+    #metrostyle{width:100%}
+    #wrapper .header .logolinks{display:none;}
+}
+@media screen and (max-width: 740px) 	
+{
+    h1 { font-size: 70px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+    #wrapper{width:100%}
+    #wrapper .header{width:100%;}
+    #smoothmenu1{background:none repeat scroll 0 0 #106AFF;}
+    #mega-menu-1{margin-left:0 !important;}
+    #mega-menu .sub-container, .mega{display:none !important;}
+    #mega-menu-1 li {float:none;}
+    #mega-menu-1{height:100%;}
+    #wrapper .menu{height:100% !important;}
+    #mega-menu-1 li a{float:none;}
+    #wrapper .cemtext .back{width:100%;}
+    #metrostyle .leftboxes{clear:left;float:none !important; position:inherit !important; left:0 !important; margin-bottom:10px !important;}
+    #sitemapfooter_div{width:100% !important;}
+    #wrapper .extended_menu{width:100%}
+    #sitemapfooter_div .social{display:none;}
+    #metrostyle{width:100%}
+    #wrapper .header .logolinks{display:none;}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+#wrapper{width:100%}
+}
+@media screen and (max-width: 960px) 	
+{
+    #wrapper{width:100%}
+}
+@media screen and (max-width: 480px) {}
+
+
+
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : portrait) 
+{
+    h1 { font-size: 70px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+    #wrapper{max-width:980px; width:100%;}
+    #wrapper .header{width:100%;}
+    #mega-menu-1 li a{float:none;}
+    #wrapper .cemtext .back{width:100%;}
+    #sitemapfooter_div{width:100% !important;}
+    #wrapper .extended_menu{width:100%}
+    #metrostyle{width:100%} 
+    #sitemapfooter_div .social{position:inherit; float:right !important;}
+    #metrostyle .leftboxes{width:320px; float:left !important; position:inherit !important;}
+    #mega-menu-1 li a{padding:12px 11px 9px}
+}
+
+/*Portrait Tablet Exceptions to adjust padding in content areas. In this query we include a simple exception rule to adjust the padding in all content areas to a value less than the default.*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    h1 { font-size: 70px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+    #wrapper{max-width:980px; width:100%;}
+    #wrapper .header{width:100%;}
+    #mega-menu-1 li a{float:none;}
+    #wrapper .cemtext .back{width:100%;}
+    #sitemapfooter_div{width:100% !important;}
+    #wrapper .extended_menu{width:100%}
+    #metrostyle{width:100%} 
+    #sitemapfooter_div .social{position:inherit; float:right !important;}
+    #metrostyle .leftboxes{width:320px; float:left !important; position:inherit !important;}
+    #mega-menu-1 li a{padding:12px 9px 9px;}
+	#wrapper{padding-bottom:0px;}
+}
+
+/*Additional Rules for Medium Desktop Browser Windows and Landscape Tablets to reflow the inner 3-column structure. When a tablet is turned sideways there is ample room to display the menu as a column so all we want to do here is reflow the inner 3-column structure that is inside the main content column so that the third column drops below the first 2 and spans full width. This query also creates a breakpoint for desktop browsers when the window is between 680 and 979 pixels.*/
+@media only screen and (min-width: 680px) and (max-width: 979px) and (orientation : landscape) {
+    h1 { font-size: 70px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+    #wrapper{max-width:975px; width:100%;}
+    #wrapper .header{width:100%;}
+    #mega-menu-1 li a{float:none;}
+    #wrapper .cemtext .back{width:100%;}
+    #sitemapfooter_div{width:100% !important;}
+    #wrapper .extended_menu{width:100%}
+    #metrostyle{width:100%} 
+    #sitemapfooter_div .social{position:inherit; float:right !important;}
+    #metrostyle .leftboxes{width:320px; float:left !important; position:inherit !important;}
+    #mega-menu-1 li a{padding:12px 9px 9px;} 
+}
+
+/*Landscape Tablet Exceptions to adjust padding and reduce font size. When a tablet is turned sideways, the text will appear larger so this query contains rules that reduces the font-size and padding.*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+}
+
+
+/*iPad Media Queries (All generations - including iPad mini)*/
+
+/*iPad in portrait &amp; landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) { /* STYLES GO HERE */}
+
+
+/*iPad in landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) { /* STYLES GO HERE */}
+
+
+/*iPad in portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) { /* STYLES GO HERE */ }
+
+
+/*iPad 3 &amp; 4 Media Queries*/
+
+/*Retina iPad in portrait &amp; landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */}
+
+
+/*Retina iPad in landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */}
+
+
+/*Retina iPad in portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */ }
+
+
+/*iPad 1 &amp; 2 Media Queries*/
+
+/*iPad 1 &amp; 2 in portrait &amp; landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (-webkit-min-device-pixel-ratio: 1){ /* STYLES GO HERE */}
+
+
+/*iPad 1 &amp; 2 in landscape*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 1) { /* STYLES GO HERE */}
+
+
+/*iPad 1 &amp; 2 in portrait*/
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) 
+and (-webkit-min-device-pixel-ratio: 1) { /* STYLES GO HERE */ }

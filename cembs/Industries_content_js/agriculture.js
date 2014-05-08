@@ -1,0 +1,14 @@
+﻿document.write("<h1>Agriculture<\/h2>");
+document.write("<p>Agriculture is a big business. Enjoying  success from the bottom line require commercial attention like never before. An  agro-based company must meet the business goals with effective operational and  financial process, efficient marketing strategy and seamless trading irrespective  of unconditional and unpredictable factors to expect growth every year. Even  though, the industry experience a tougher time in planning, structuring and  organizing its business process, with the help of trusted solution partners  like CEM, companies can get through these challenges and gain competitive  advantage..<br \/>");
+document.write("  CEM’s agro solution delivers significant  improvements in cost, efficiency and customer service functionalities.  Seamlessly integrated with Microsoft Dynamics technology, our solution ensures  smooth and adoptable operational and functional process within the entire  organization which would streamline, integrate and standardize your business.<\/p>");
+document.write("<ul class=\"ul_reasons\">");
+document.write("  <li>Based on the availability of       the resources, you can control your Inventory management <\/li>");
+document.write("  <li>Assist you pre-production and       post-production planning resulting in lowering the wastage of raw       materials.<\/li>");
+document.write("  <li>Better cash flow management by       assisting you in managing and controlling overheads <\/li>");
+document.write("  <li>Manage and control your       delivery based on the timely availability of the raw materials.<\/li>");
+document.write("  <li>Provide insights into your       entire business operations and product costs improving efficiency,       decision making skills and reducing the cost. <\/li>");
+document.write("  <li>Complete quality management<\/li>");
+document.write("  <li>Control over product life cycle       to provide better efficiency over assortment <\/li>");
+document.write("  <li>Quick supply and demand       planning capabilities<\/li>");
+document.write("  <li>Tracing settlements, contracts       and brokerage lots.<\/li>");
+document.write("<\/ul>");

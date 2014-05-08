@@ -1,0 +1,37 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="sampleindex.aspx.cs" Inherits="sampleindex" %>
+<%@ Register TagName="banner" TagPrefix="slider" Src="banner.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+        <script type="text/javascript">
+
+            // Google Internal Site Search script- By JavaScriptKit.com (http://www.javascriptkit.com)
+            // For this and over 400+ free scripts, visit JavaScript Kit- http://www.javascriptkit.com/
+            // This notice must stay intact for use
+
+            //Enter domain of site to search.
+            var domainroot = "www.cembs.com"
+
+            function Gsitesearch(curobj) {
+                curobj.q.value = "site:" + domainroot + " " + curobj.qfront.value
+            }
+
+        </script>
+</head>
+<body>
+    <div>
+        <form action="http://www.google.com/search" method="get" onsubmit="Gsitesearch(this)">
+        <p>
+            Search JavaScript Kit:<br />
+            <input name="q" type="hidden" />
+            <input name="qfront" type="text" style="width: 180px" />
+            <input type="submit" value="Search" /></p>
+        </form>
+        <p style="font: normal 11px Arial">
+            This free script provided by<br />
+            <a href="http://www.cembs.com">JavaScript Kit</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,304 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.master" AutoEventWireup="true"
+    CodeFile="Construct.aspx.cs" Inherits="Construct" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
+    <title>Construction Management Software | CEM AX Construct</title>
+    <meta name="description" content="With increased competition adding intensity to the growing economy, Construction companies are planning to complete their ambitious projects at a shorter period. However, this complex business involves material, manpower and many third party services like partnering, financing etc., from various parts of the world. Adding to this are compliance requirement and quality norms from customers, government and unions set a new benchmark making the business even more complex. CEM Construct AX Product designed to meet the chalenges in constrction industry." />
+    <meta name="keywords" content="construction, property management, project management software, erp software, erp system, crm software, construction management, crms, crm system, landscape design software, crm online, construction software, construction services, best crm, construction management software, construction erp, construction crm, microsoft dynamics for construction" />
+    <meta name="robots" content="index, follow" />
+    <link href="Styles/OthersPages/ulreasons.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OthersPages/MS_Dyn_ERP.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //On Click Event
+            $("ul.tabs li").click(function () {
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+            });
+        });
+        function name_blur(_this) {
+            if (_this.value == '') {
+                _this.value = 'Name *';
+            }
+            else {
+                _this.value;
+            }
+        };
+        function company_blur(_this) {
+            if (_this.value == '') {
+                _this.value = 'Company *';
+            }
+            else {
+                _this.value;
+            }
+        };
+        function mail_blur(_this) {
+            if (_this.value == '') {
+                _this.value = 'Work mail *';
+            }
+            else {
+                _this.value;
+            }
+        };
+        function phone_blur(_this) {
+            if (_this.value == '') {
+                _this.value = 'Phone *';
+            }
+            else {
+                _this.value;
+            }
+        };
+    </script>
+    <style type="text/css">
+        .tab_content
+        {
+            width: 310px !important;
+            float: left;
+            font-size: 14px !important;
+            text-align: left !important;
+        }
+        p{text-align:left !important;}
+        li
+        {
+            line-height: 19px !important;
+        }
+        h4
+        {
+            margin: 0;
+            padding: 10px 0;
+        }
+        img
+        {
+            box-shadow: 0px !important;
+        }
+        .textbox
+        {
+            width: 220px;
+            border: 1px solid #bdbdbd;
+            background: #fff;
+            color: #505050;
+            margin: 3px 0 3px 10px;
+            padding: 4px 10px;
+            line-height: 18px;
+            text-align:left;
+        }
+        .leftalign
+        {
+            text-align:left;
+        }
+        .button
+        {
+            background: url('Images/demobtn.png') no-repeat;
+            border: 0 none;
+            cursor: pointer;
+            height: 36px;
+            width: 192px;
+            margin: 10px 0;
+        }
+        .clearfix
+        {
+            clear: both;
+        }
+    </style>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="layout_ContentPlaceholder" runat="Server">
+    <div class="content_div">
+        <div class="common_banners" style="margin: 0; padding: 0;">
+            <img src="Images/construction-banner.jpg" alt="CEM Construct" width="980" height="192" />
+        </div>
+        <div>
+            <div style="padding: 0 10px 0 10px; text-align: justify; float: left; width: 680px;">
+                <div id="overview" class="tab_content" style="width: 300px !important; float: left;">
+                    <h1 style="border-bottom: 1px dashed #DDDDDD; color: #0B76BA; font-size: 18px; font-weight: normal;
+                        margin: 0; padding-bottom: 10px;">
+                        CEM AX Construct</h1>
+                    <p>
+                        CEM AX Construct is designed to meet the needs of construction companies, sub-contracting
+                        and general contracting companies. All activities from pre-construction to post
+                        construction stages can be captured and monitored in detail.</p>
+                    <p>
+                        CEM AX Construct connects critical project sites, warehousing and project specific
+                        procurement processes with enterprise resource planning (ERP) and financials of
+                        Microsoft Dynamics AX.</p>
+                </div>
+                <div id="Div1" class="tab_content float_left " style="width: 300px !important;">
+                    <h2>
+                        Benefits of CEM Construct:</h2>
+                    <ul class="ul_reasons">
+                        <li>User-friendly interface </li>
+                        <li>Manage project efficiency </li>
+                        <li>Complete control of project finances </li>
+                        <li>Subcontractor tracking and management </li>
+                        <li>Sophisticated procurement </li>
+                        <li>Scalability of operations </li>
+                        <li>Improved quality of work </li>
+                        <li>Better equipment utilization </li>
+                        <li>Reduced inventory levels </li>
+                        <li>Estimated schedule vs actual activity reports</li>
+                    </ul>
+                </div>
+                <p style="padding: 0px 0px 0px 10px;" class="clearfix">
+                    One of the core advantages of Construct is accessibility and management of onsite
+                    activities from anywhere anytime. Independent estimates can also be generated for
+                    each task, based on respective quantities.</p>
+                <p class="clearfix" style="padding: 0px 0px 0px 10px;">
+                    CEM has added the following modules within Microsoft Dynamics 2012 ERP, seamlessly
+                    in-order to provide, comprehensive solution.</p>
+                <div id="subcontracting" class="tab_content clearfix">
+                    <h2>
+                        Sub Contract Management</h2>
+                    <ul class="ul_reasons">
+                        <li>Manage subcontracts scope, work breakdown structure, scope breakup, payment milestone
+                            & variation orders </li>
+                        <li>Track advances and retentions </li>
+                        <li>Track and manage subcontract related documents such as Performance bond, Warrantees
+                            etc.,</li>
+                        <li>Track invoices against scope and scope details</li>
+                        <li>Track materials issues and food & accommodation expenses related to subcontracts
+                            for prompt back charging </li>
+                    </ul>
+                </div>
+                <div id="workforce" class="tab_content">
+                    <h2>
+                        Workforce augmentation</h2>
+                    <ul class="ul_reasons">
+                        <li>Maintain trade agreements for labor supply with effective dates</li>
+                        <li>Maintain timesheets for hired employees as project-wise </li>
+                        <li>Track the food &amp; accommodation of hired employees for prompt back charging</li>
+                        <li>History of hired employees and option for purging the hired employee details
+                        </li>
+                        <li>Certify use payment certification process for approving vendor invoices </li>
+                    </ul>
+                </div>
+                <div id="advancedproject" class="tab_content clearfix">
+                    <h2>
+                        Advanced Project Management
+                    </h2>
+                    <ul class="ul_reasons">
+                        <li>Manage project demographic by creating locations and project clusters</li>
+                        <li>Complete scope management and Change management for cost tracking and billing</li>
+                        <li>Project segmentation by tracking the completion stages by control accounts </li>
+                        <li>Quality management with the use of product codes for manpower and equipment usage
+                        </li>
+                        <li>Secured access to project information and relevant transactions on a need-to-know
+                            basis </li>
+                        <li>Extensive reporting such as budget vs. actual consumption by various project dimensions,
+                            Estimate at Complete etc.</li>
+                    </ul>
+                </div>
+                <div id="advancedinventory" class="tab_content">
+                    <h2>
+                        Advanced Inventory Management</h2>
+                    <ul class="ul_reasons">
+                        <li>Categorization of items </li>
+                        <li>Item Creation Wizard </li>
+                        <li>Budgeting by various levels of item hierarchy </li>
+                        <li>Returnable item management – Issue and Return to Projects, Vendors and Clients
+                        </li>
+                        <li>Surplus Declaration </li>
+                        <li>Transit items Management </li>
+                    </ul>
+                </div>
+                <div id="pmv" class="tab_content clearfix">
+                    <h2>
+                        Plant Machinery and Vehicle (PMV) management
+                    </h2>
+                    <ul class="ul_reasons">
+                        <li>Manage Equipment Purchase & Hiring (External and Internal hiring)</li>
+                        <li>Trade agreements for both internal & external hire </li>
+                        <li>Integration of PMV with fixed assets module </li>
+                        <li>Maintain & track equipment log sheet </li>
+                        <li>Equipment transfer history </li>
+                        <li>Equipment hire renewal with history </li>
+                        <li>Track fuel consumption </li>
+                        <li>Manage mobilization/demobilization costs of equipment hire</li>
+                        <li>Regular alerts for equipment related documents including registration, license,
+                            Security pass, warranty period expiration, etc.</li>
+                    </ul>
+                </div>
+                <div id="staff" class="tab_content">
+                    <h2>
+                        Staff accommodation
+                    </h2>
+                    <ul class="ul_reasons">
+                        <li>Resources stay management in internal and external camps.</li>
+                        <li>Manage your camp capacity, accommodation of diversified occupants and guests.</li>
+                        <li>Manage Trade agreement for caterers to facilitate the accurate cost booking.
+                        </li>
+                        <li>Convenient user experience for check in &amp; check out of the occupants.</li>
+                        <li>Efficient camp capacity planning</li>
+                        <li>Manage the occupants food expenses</li>
+                        <li>Cost allocations to respective projects</li>
+                    </ul>
+                </div>
+                <div id="management" class="tab_content clearfix">
+                    <h2>
+                        Tool management (Scaffolding)</h2>
+                    <ul class="ul_reasons">
+                        <li>Manage purchasing and hiring of scaffold </li>
+                        <li>Manage Trade agreements for purchase, hire and discounts </li>
+                        <li>Analyze the scaffold logistics from list of requested items to invoiced items</li>
+                        <li>Better utilization of internal materials</li>
+                        <li>Scrap, Lost Management of materials </li>
+                        <li>Flexible and controlled receipt management</li>
+                        <li>Track vendor invoice &amp; has better control and reconciliation</li>
+                    </ul>
+                </div>
+                <div id="rmc" class="tab_content">
+                    <h2>
+                        Ready-mix concrete (RMC) purchase</h2>
+                    <ul class="ul_reasons">
+                        <li>Maintain optional items along with main concrete items</li>
+                        <li>Maintain quality Thresholds for partial truck load and pumping charges </li>
+                        <li>Summarized and detailed reporting on concrete purchases for invoice certification
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div style="float: left; width: 270px; padding: 10px 0px 0px 9px;">
+                <div style="background: #0B76BA; color: #ffffff; text-align: center;">
+                    <h4>
+                        Get a demo &amp;
+                        <br />
+                        Learn more about CEM AX Construct</h4>
+                    <div style="background: #f8f8f8; color: #000; text-align: center; margin: 5px 0 0 0;">
+                        <div class="leftalign"><asp:TextBox ID="NameTxt" CssClass="textbox" Text="Name *" runat="server" onfocus="this.value=''"
+                            onBlur="name_blur(this.value)"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="*"
+                            ControlToValidate="NameTxt" ValidationGroup="getdemo" InitialValue="Name *"></asp:RequiredFieldValidator></div>
+                        <div class="leftalign"><asp:TextBox ID="CompanyTxt" CssClass="textbox" Text="Company *" runat="server" onfocus="this.value=''"
+                            onBlur="company_blur(this.value)"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*"
+                            ControlToValidate="CompanyTxt" ValidationGroup="getdemo" InitialValue="Company *"></asp:RequiredFieldValidator></div>
+                        <div class="leftalign"><asp:TextBox ID="MailTxt" CssClass="textbox" Text="Work mail *" runat="server" onfocus="this.value=''"
+                            onBlur="mail_blur(this.value)"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*"
+                            ControlToValidate="MailTxt" ValidationGroup="getdemo" Display="Dynamic" InitialValue="Work mail *"></asp:RequiredFieldValidator></div>
+                        <div class="leftalign"><asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="*"
+                            Display="Dynamic" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                            ControlToValidate="MailTxt"></asp:RegularExpressionValidator>
+                        <asp:TextBox ID="PhoneTxt" CssClass="textbox" Text="Phone *" runat="server" onfocus="this.value=''"
+                            onBlur="phone_blur(this.value)"></asp:TextBox><asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*"
+                            ControlToValidate="PhoneTxt" ValidationGroup="getdemo" InitialValue="Phone *"></asp:RequiredFieldValidator></div>
+                        <div class="leftalign"><br />
+                        <asp:Button ID="Button1" runat="server" Text="" CssClass="button" ValidationGroup="getdemo" /></div>
+                        
+                       
+                        
+                        
+                       
+                    </div>
+                </div>
+                <div style="background: #0B76BA; color: #ffffff; text-align: center;">
+                    <h4>
+                        Contact us</h4>
+                    <div style="background: #f8f8f8; color: #000; text-align: center;">
+                        <a href="Contactus.aspx">
+                            <img src="Images/construct-contact.jpg" alt="contact" width="270" height="228" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Content>

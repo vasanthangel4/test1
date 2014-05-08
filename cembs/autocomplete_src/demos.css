@@ -1,0 +1,43 @@
+table{font-size:1em;}
+.demos-nav dd a:hover,
+.demos-nav dd a:focus,
+.demos-nav dd a:hover,
+.demos-nav dd a:focus{background:#f3f3f3;color:#000;-moz-border-radius:5px;-webkit-border-radius:5px;}
+.normal a:link,
+.normal a:visited{color:#1b75bb;text-decoration:none;}
+.normal a:hover,
+.normal a:active{color:#0b559b;}
+#demo-config-menu li a:link,
+#demo-config-menu li a:visited{display:block;padding:1px 8px 4px;border-bottom:1px dotted #b3b3b3;}
+* html #demo-config-menu li a:link,
+* html #demo-config-menu li a:visited{padding:1px 8px 2px;}
+#demo-config-menu li a:hover,
+#demo-config-menu li a:active{background-color:#f6f6f6;}
+#demo-config-menu li.demo-config-on a:link,
+#demo-config-menu li.demo-config-on a:visited,
+#demo-config-menu li.demo-config-on a:hover,
+#demo-config-menu li.demo-config-on a:active{background:url(images/demo-config-on.gif) no-repeat left;padding-left:18px;color:#fff;border:0;margin-left:-10px;margin-top:0px;margin-bottom:0px;}
+#demo-source a:link,
+#demo-source a:visited,
+#demo-source a:hover,
+#demo-source a:active{font-size:12px;padding-left:13px;background-position:left center;background-repeat:no-repeat;}
+#demo-source a.source-open:link,
+#demo-source a.source-open:visited,
+#demo-source a.source-open:hover,
+#demo-source a.source-open:active{background-image:url(images/demo-spindown-open.gif);}
+#demo-source a.source-closed:link,
+#demo-source a.source-closed:visited,
+#demo-source a.source-closed:hover,
+#demo-source a.source-closed:active{background-image:url(images/demo-spindown-closed.gif);}
+#widget-docs .ui-tabs-nav li a:link,
+#widget-docs .ui-tabs-nav li a:visited,
+#widget-docs .ui-tabs-nav li a:hover,
+#widget-docs .ui-tabs-nav li a:active{font-size:14px;padding:4px 1.2em 3px;color:#fff;}
+#widget-docs .ui-tabs-nav li.ui-tabs-selected a:link,
+#widget-docs .ui-tabs-nav li.ui-tabs-selected a:visited,
+#widget-docs .ui-tabs-nav li.ui-tabs-selected a:hover,
+#widget-docs .ui-tabs-nav li.ui-tabs-selected a:active{color:#e6820E;}
+#widget-docs .ui-widget-content a:link,
+#widget-docs .ui-widget-content a:visited{color:#1b75bb;text-decoration:none;}
+#widget-docs .ui-widget-content a:hover,
+#widget-docs .ui-widget-content a:active{color:#0b559b;}

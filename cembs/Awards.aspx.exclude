@@ -1,0 +1,321 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="Layout.master" AutoEventWireup="true"
+    CodeFile="Awards.aspx.cs" Inherits="Awards" %>
+
+<%@ Register TagName="usercontrol_quicklinks" TagPrefix="quicklinks" Src="~/UserControls/quicklinks.ascx" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
+<title> Awards | Microsoft dynamics certified partner | Microsoft BEST Implementation Partner</title>
+<meta name="description" content="Fastest Growing Company of the year, Best Marketing Partner, Microsoft BEST Implementation Partner,  Microsoft dynamics certified partner"/>
+<meta name="keywords" content=" Fastest Growing Company of the year, Best Marketing Partner, Microsoft BEST Implementation Partner,  Microsoft dynamics certified partner"/>
+<meta name="robots" content="index, follow"/>
+    <script src="clearbox.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Scripts/easyTooltip.js"></script>
+    <!-- awards slider -->
+    <link rel="stylesheet" href="awards/framework-reset.css" type="text/css" />
+    <link rel="stylesheet" href="awards/jquery.css" type="text/css" />
+    <script src="awards/jquery_007.js" type="text/javascript"></script>
+    <!-- end awards slider -->
+    <link href="Styles/gallery_style.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OthersPages/ulphotos.css" rel="stylesheet" type="text/css" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="layout_ContentPlaceholder" runat="Server">
+    <%--<div class="common_banners">
+        <img src="Images/awards.jpg" alt="About CEM" />
+    </div>--%>
+    <div class="content_div">
+        <div class="container">
+            <div style="padding: 0 20px 20px 20px; text-align: justify;">
+                <h2>
+                    Awards</h2>
+                <p>
+                    Helping customers unleash their full potential by providing them transformational
+                    business solutions is our goal at CEM.</p>
+                <p>
+                    The awards and recognition we continue to win are a testament to our success.</p>
+                <div class="gallery">
+                    <h4 style="border: none; color: Teal">
+                        <b>2012</b>
+                    </h4>
+                    <ul class="photos">
+                        <li>
+                            <div style="text-align: center;">
+                                <a href="awards/fastestgrowing2012.jpg" rel="clearbox[gallery=awards]" title="CEMBS Awards">
+                                    <img src="awards/fastestgrowing2012_small.jpg" alt="Fastest Growing Company 2012" />
+                                </a>
+                                <br />
+                                <span class="awards_title">Fastest Growing Company of the year</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="text-align: center;">
+                                <a href="awards/BestMarketing2012.jpg" rel="clearbox[gallery=awards]" title="CEMBS Awards">
+                                    <img src="awards/BestMarketing2012_small.jpg" alt="Microsoft Best Marketing Partner- FY12" />
+                                </a>
+                                <br />
+                                <span>Best Marketing Partner</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 style="border: none; color: Teal">
+                        <b>2011</b>
+                    </h4>
+                    <ul class="photos">
+                        <li>
+                            <div style="text-align: center;">
+                                <a href="awards/bimp2011.jpg" rel="clearbox[gallery=awards]" title="CEMBS Awards">
+                                    <img src="awards/bimp2011_small.jpg" alt="Microsoft BEST Implementation Partner 2011" />
+                                </a>
+                                <br />
+                                <span>Microsoft BEST Implementation Partner</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/PresidentClub-2011.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="2011 President's Club for Microsoft Dynamics." src="awards/PresidentClub-2011_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">President's Club for Microsoft Dynamics.</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/PresidentClub-2011.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="2011 President's Club for Microsoft Dynamics." src="awards/PresidentClub-2011_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">President's Club for Microsoft Dynamics.</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 style="border: none; color: Teal">
+                        <b>2010</b>
+                    </h4>
+                    <ul class="photos">
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/bimp2012.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="Microsoft BEST Implementation Partner Award 2010" src="awards/bimp2012_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">Microsoft BEST Implementation Partner Award</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/countrypartner-uae-2010.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="2010 Microsoft Country Partner of the Year UAE&lt;" src="awards/countrypartner-uae-2010_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">Microsoft Country Partner of the Year UAE</span>
+                            </div>
+                        </li>
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/goldPartner2010-11.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="Microsoft Gold Certified Partner 2010 - 2011" src="awards/goldPartner2010-11_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">Microsoft Gold Certified Partner</span>
+                            </div>
+                        </li>
+                    </ul>
+                    <h4 style="border: none; color: Teal">
+                        <b>2009</b>
+                    </h4>
+                    <ul class="photos">
+                        <li>
+                            <div style="text-align: center;">
+                                <a title="CEMBS Awards" rel="clearbox[gallery=awards]" href="awards/sales2009.jpg"
+                                    class="moduleItemImage">
+                                    <img alt="Best Sales Partner Award 2009" src="awards/sales2009_small.jpg" />
+                                </a>
+                                <br />
+                                <span class="awards_title">Best Sales Partner Award</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- awards -->
+            <%--<script type="text/javascript">
+                jQuery(window).load(function () {
+
+                    var $partners = $('#partners')
+                    var $carousel = $('#carousel')
+
+                    $partners.jcarousel({
+                        visible: 3,
+                        scroll: -1,
+                        wrap: 'circular',
+                        animation: 'slow'
+                    })
+
+                    $carousel.jcarousel({
+                        visible: 3,
+                        scroll: -1,
+                        wrap: 'circular',
+                        animation: 'slow'
+                    })
+                });
+            </script>--%>
+            <%--<div id="k2ModuleBox81" class="k2ItemsBlock partners">
+                <div style="position: relative; display: block;" class="jcarousel-container jcarousel-container-horizontal">
+                    <div style="position: relative;" class="jcarousel-clip jcarousel-clip-horizontal">
+                        <ul style="overflow: hidden; position: relative; top: 0px; margin: 0px; padding: 0px;
+                            left: -1290px; width: 2064px;" class="jcarousel-list jcarousel-list-horizontal"
+                            id="partners">
+                            <li jcarouselindex="8" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even firstItem jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/fastestgrowing2012.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/fastestgrowing2012_small.jpg" alt="Fastest Growing Company 2012" />
+                                    </a><span class="awards_title">Fastest Growing Company 2012</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="9" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even firstItem jcarousel-item jcarousel-item-horizontal jcarousel-item-9 jcarousel-item-9-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/BestMarketing2012.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/BestMarketing2012_small.jpg" alt="Microsoft Best Marketing Partner- FY12" />
+                                    </a><span class="awards_title">Microsoft Best Marketing Partner - FY12</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="1" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even firstItem jcarousel-item jcarousel-item-horizontal jcarousel-item-1 jcarousel-item-1-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/bimp2011.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/bimp2011_small.jpg" alt="Microsoft BEST Implementation Partner 2011" />
+                                    </a><span class="awards_title">Microsoft BEST Implementation Partner 2011</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="2" style="float: left; list-style: none outside none; width: 224px;"
+                                class="odd jcarousel-item jcarousel-item-horizontal jcarousel-item-2 jcarousel-item-2-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/bimp2012.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/bimp2012_small.jpg" alt="Microsoft BEST Implementation Partner Award 2010" />
+                                    </a><span class="awards_title">Microsoft BEST Implementation Partner Award 2010</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="3" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even lastItem jcarousel-item jcarousel-item-horizontal jcarousel-item-3 jcarousel-item-3-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/countrypartner-uae-2010.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/countrypartner-uae-2010_small.jpg" alt="2010 Microsoft Country Partner of the Year UAE<" />
+                                    </a><span class="awards_title">2010 Microsoft Country Partner of the Year UAE</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="4" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even firstItem jcarousel-item jcarousel-item-horizontal jcarousel-item-4 jcarousel-item-4-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/goldPartner2010-11.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/goldPartner2010-11_small.jpg" alt="Microsoft Gold Certified Partner 2010 - 2011" />
+                                    </a><span class="awards_title">Microsoft Gold Certified Partner 2010 - 2011.</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="5" style="float: left; list-style: none outside none; width: 224px;"
+                                class="odd jcarousel-item jcarousel-item-horizontal jcarousel-item-5 jcarousel-item-5-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/PresidentClub-2011.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/PresidentClub-2011_small.jpg" alt="2011 President's Club for Microsoft Dynamics." />
+                                    </a><span class="awards_title">2011 President's Club for Microsoft Dynamics.</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="6" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even lastItem jcarousel-item jcarousel-item-horizontal jcarousel-item-6 jcarousel-item-6-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/sales2009.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/sales2009_small.jpg" alt="Best Sales Partner Award 2009" />
+                                    </a><span class="awards_title">Best Sales Partner Award 2009.</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="7" style="float: left; list-style: none outside none; width: 224px;"
+                                class="even firstItem jcarousel-item jcarousel-item-horizontal jcarousel-item-7 jcarousel-item-7-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/wpc-steve.jpg" rel="clearbox[gallery=awards]"
+                                        title="CEMBS Awards">
+                                        <img src="awards/wpc-steve_small.jpg" alt="Geetha , our COO with Steve Ballmer" />
+                                    </a><span class="awards_title">Geetha , our COO with Steve Ballmer.</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                            <li jcarouselindex="8" style="float: left; list-style: none outside none; width: 224px;"
+                                class="odd jcarousel-item jcarousel-item-horizontal jcarousel-item-8 jcarousel-item-8-horizontal">
+                                <div class="moduleItemIntrotext">
+                                    <a class="moduleItemImage" href="awards/wpc.jpg" rel="clearbox[gallery=awards]" title="CEMBS Awards">
+                                        <img src="awards/wpc_small.jpg" alt="Microsoft WPC Awards" />
+                                    </a><span class="awards_title">Microsoft WPC Awards.</span>
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                                <div class="clr">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: block;" class="jcarousel-prev jcarousel-prev-horizontal">
+                    </div>
+                    <div style="display: block;" class="jcarousel-next jcarousel-next-horizontal">
+                    </div>
+                </div>
+            </div>--%>
+            <!-- end awards -->
+        </div>
+        <quicklinks:usercontrol_quicklinks ID="quicklinks" runat="server" />
+    </div>
+</asp:Content>

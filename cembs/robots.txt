@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /development/
+Disallow: /support/
+Disallow: /supportservices/
+Disallow: /old Website2010/
+Disallow: /CEMService/
+Sitemap: http://www.cembs.com/sitemap.xml

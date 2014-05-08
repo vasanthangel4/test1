@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/CEMService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/CEMService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="QuoteService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="companyField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="contactField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="designationField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="formnameField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="messageField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nameField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="requestdateField" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="websiteField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="QuoteService" nillable="true" type="tns:QuoteService" />
+  <xs:complexType name="MailService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ccField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="companyField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="contactField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="designationField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="emailField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="formnameField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="fromField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="messageField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="nameField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="requestdateField" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="toField" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="websiteField" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MailService" nillable="true" type="tns:MailService" />
+</xs:schema>

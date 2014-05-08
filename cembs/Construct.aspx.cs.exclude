@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Construct : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        //adding onblur events for javascript
+        NameTxt.Attributes.Add("onblur", "name_blur(this);");
+        CompanyTxt.Attributes.Add("onblur", "company_blur(this);");
+        MailTxt.Attributes.Add("onblur", "mail_blur(this);");
+        PhoneTxt.Attributes.Add("onblur", "phone_blur(this);");
+    }
+}

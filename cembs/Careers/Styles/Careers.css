@@ -1,0 +1,88 @@
+﻿body
+{
+    margin: 0px;
+    padding: 0px;
+}
+#ctl00_ContentPlaceHolder1_Jobs_Grid
+{
+    border: none;
+}
+#ctl00_ContentPlaceHolder1_Jobs_Grid tr
+{
+    border-bottom: 1px solid #1A6081;
+}
+#ctl00_ContentPlaceHolder1_Jobs_Grid th
+{
+    border: 0px solid #000;
+    padding: 0px 5px 0px 10px;
+    margin: 0px;
+    background:#534C4A;
+    text-align: center;
+}
+#ctl00_ContentPlaceHolder1_Jobs_Grid td
+{
+    border: none;
+    padding: 0px 5px 6px 10px;
+    text-align: center;
+}
+#Jobs_Results
+{
+}
+#Jobs_Results
+{
+    height: 20px;
+    width: 500px;
+}
+#Jobs_Results th
+{
+    border: 0px solid #000;
+    padding: 0px 5px 0px 10px;
+    margin: 0px;
+    background:#534C4A;
+    text-align: center;
+    width:110px;
+}
+.center
+{
+    text-align: center;
+}
+#Jobs_Results td
+{
+    text-align: center;
+}
+#Jobs_Results .jobtitle, .careerlevel, .category, .skills, .location
+{
+    text-align: center;
+}
+#Jobs_Results .jobtitle
+{
+    width: 110px;
+}
+#Jobs_Results .careerlevel
+{
+    width: 110px;
+}
+#Jobs_Results .category
+{
+    width: 110px;
+}
+#Jobs_Results .skills
+{
+    width: 110px;
+}
+#Jobs_Results .location
+{
+    width: 110px;
+}
+#Jobs_Results .apply
+{
+    width: 35px;
+}
+#categories_list
+{
+    width: 100px;
+}
+.ul_reasons
+{
+    list-style:disc outside url("../../Images/arrow.jpg");
+}

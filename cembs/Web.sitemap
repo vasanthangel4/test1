@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="Index.aspx" title="Home"  description="CEM Business Home page">
+    <siteMapNode url="Industries.aspx" title="Industries"  description="Industries">
+      <siteMapNode url="Construction-Management.aspx" title="Construction" description="Construction" />
+      <siteMapNode url="Contract-Software.aspx" title="Contracting" description="Contracting"  />
+      <siteMapNode url="Project-Management-Software.aspx" title="Projects" description="Projects"  />
+      <siteMapNode url="ProfessionalServices.aspx" title="Services" description="Services"  />
+      <!--<siteMapNode url="Oil-companies.aspx" title="Oil &amp; Gas" description="Oil &amp; Gas"  />-->
+      <siteMapNode url="ERP-for-Manufacturing.aspx" title="Manufacturing" description="Manufacturing"  />
+      <siteMapNode url="Trading.aspx" title="Trading" description="Trading"  />
+      <siteMapNode url="Logistics.aspx" title="Logistics &amp; Distribution" description="Logistics &amp; Distribution"  />
+      <siteMapNode url="Retail-Management.aspx" title="Retail Solutions" description="Retail Solutions"  />
+      <siteMapNode url="Group-Companies.aspx" title="Group companies" description="Group companies" />
+    </siteMapNode>
+    <siteMapNode url="DynamicsProducts.aspx" title="Microsoft Dynamics Products"  description="Microsoft Dynamics Products">
+      <siteMapNode url="Microsoft-Dynamics-AX.aspx" title="Microsoft Dynamics AX"  description="Microsoft Dynamics AX"/>
+      <siteMapNode url="Microsoft-Dynamics-Nav.aspx" title="Microsoft Dynamics NAV" description="Microsoft Dynamics NAV"  />
+      <siteMapNode url="Microsoft-Dynamics-GP.aspx" title="Microsoft Dynamics GP" description="Microsoft Dynamics GP"  />
+      <siteMapNode url="Microsoft-Dynamics-SL.aspx" title="Microsoft Dynamics SL" description="Microsoft Dynamics SL"  />
+      <siteMapNode url="Microsoft-Dynamics-CRM.aspx" title="Microsoft Dynamics CRM" description="Microsoft Dynamics CRM"  />
+    </siteMapNode>
+    <siteMapNode url="CEMProducts.aspx" title="CEM Products"  description="CEM Products">
+      <siteMapNode url="Construction-Management-Software.aspx" title="CEM AX Construct"  description="CEM AX Construct" />
+      <siteMapNode url="Construction-Project-Management-Software.aspx" title="CEM AX ProjectPro"  description="CEM AX ProjectPro" />
+      <siteMapNode url="Microsoft-Dynamics-RMS.aspx" title="CEM AX Retail"  description="CEM AX Retail" />
+      <siteMapNode url="Human-Capital-Management.aspx" title="CEM AX HCM"  description="CEM AX HCM" />
+      <siteMapNode url="Payroll-Software.aspx" title="CEM AX Payroll"  description="CEM AX Payroll" />
+      <siteMapNode url="CEM-AX-Union-Payroll.aspx" title="CEM AX Union Payroll"  description="CEM AX Union Payroll" />
+    </siteMapNode>
+    <siteMapNode url="CEMServices.aspx" title="CEM Services" description="CEM Services"  >
+      <siteMapNode url="Implementation-Services.aspx" title="ERP &amp; CRM implementation" description="ERP &amp; CRM implementation"  />
+      <siteMapNode url="Upgrading-Microsoft-Dynamics.aspx" title="Upgrade" description="Upgrade"  />
+      <siteMapNode url="CRM-ERP-Migration-Services.aspx" title="Migration" description="Migration"  />
+      <siteMapNode url="Outsourcing.aspx" title="Outsourcing" description="Outsourcing"  />
+      <siteMapNode url="Optimization.aspx" title="Optimization" description="Optimization"  />
+      <siteMapNode url="Manpower-Staffing.aspx" title="Manpower augmentation" description="Manpower augmentation"  />
+      <siteMapNode url="ERP-and-CRM-Support.aspx" title="ERP &amp; CRM support" description="ERP &amp; CRM support"  />
+      <siteMapNode url="Project-Management.aspx" title="Project management" description="Project management"  />
+      <siteMapNode url="Product-Selection.aspx" title="Product selection" description="Product selection"  />
+    </siteMapNode>
+    <siteMapNode url="About-CEM.aspx" title="About CEM" description="About CEM"  >
+      <siteMapNode url="Customers.aspx" title="Customers" description="Customers"  />
+      <siteMapNode url="Values.aspx" title="Our values" description="Our values"  />
+      <siteMapNode url="CSR.aspx" title="Corporate Social Responsibility" description="Corporate Social Responsibility"  />
+      <siteMapNode url="Geo.aspx" title="Geographies" description="Geographies"  />
+      <siteMapNode url="Awards.aspx" title="Awards" description="Awards"  />
+      <siteMapNode url="Relationship.aspx" title="Microsoft relationship" description="Microsoft relationship"  />
+      <siteMapNode url="CFMD.aspx" title="CFMD" description="CFMD"  />
+      <siteMapNode url="Global.aspx" title="Global Installations" description="Global Installations"  />
+    </siteMapNode>
+    <siteMapNode url="Careers/index.aspx" title="Jobs" description="Jobs">
+      <siteMapNode url="Careers/CurrentOpportunities.aspx" title="Current Opportunities" description="Current Opportunities"  />
+    </siteMapNode>
+    <siteMapNode url="Contactus.aspx" title="Contact us" description="Contact us"  />
+    <siteMapNode url="CEMSitemap.aspx" title="Sitemap" description="Sitemap"  />
+    <siteMapNode url="PrivacyPolicy.aspx" title="Privacy Policy" description="Privacy Policy"  />
+    <siteMapNode url="News.aspx" title="News" description="News"  />
+  </siteMapNode>
+</siteMap>

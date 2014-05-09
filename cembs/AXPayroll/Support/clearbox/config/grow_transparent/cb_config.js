@@ -25,7 +25,7 @@ var
 	CB_ThumbsBGOpacity=.75,				// opacity of the thumbnail layer
 	CB_ActThumbOpacity=.5,				// thumbnail opacity of the current viewed image
 
-	CB_SlideShowBarColor='#000',			// color of the slideshow bar
+	CB_SlideShowBarColor='#000',	    // color of the slideshow bar
 	CB_SlideShowBarOpacity=.5,			// opacity of the slideshow bar
 	CB_SlideShowBarPadd=2,				// padding of the slideshow bar (left and right)
 	CB_SlideShowBarTop=2,				// position of the slideshow bar from the top of the picture

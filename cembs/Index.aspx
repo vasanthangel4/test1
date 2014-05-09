@@ -36,7 +36,8 @@
     <div class="wrap">
         <div id="fb-root">
         </div>
-        <script type="text/javascript">            (function (d, s, id) {
+        <script type="text/javascript">           
+         (function (d, s, id) {
                 var js, fjs = d.getElementsByTagName(s)[0];
                 if (d.getElementById(id)) return;
                 js = d.createElement(s); js.id = id;
@@ -54,7 +55,7 @@
             <!-- Banner Section -->        
         </header>
         <section>
-    	    <div class="line">
+    	    <div class="line" >
         	    <div class="slider">
 			        <div class="flexslider home">
 				<ul class="slides">				

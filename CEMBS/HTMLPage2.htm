@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="Scripts/v3/jquery.feedback_me.js"></script>
+    <script src="Scripts/jquery.js" type="text/javascript"></script>
+    <link href="Styles/v3/jquery.feedback_me.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/v3/jquery.feedback_me.rtl.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/v3/home-style.css" rel="stylesheet" type="text/css" />
+     <script src="Scripts/v3/flexslider.js"></script>
+    <script src="Scripts/v3/jquery.li-scroller.1.0.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //set up some basic options for the feedback_me plugin
+            fm_options = {
+                position: "left-bottom",
+                name_required: true,
+                message_placeholder: "Go ahead, type your feedback here...",
+                message_required: true,
+                show_asterisk_for_required: true//,
+                //feedback_url: "send_feedback_clean",
+                //custom_params: {
+                //csrf: "my_secret_token",
+                //user_id: "john_doe",
+                //feedback_type: "clean"
+                //}
+            };
+            //init feedback_me plugin
+            fm.init(fm_options);
+        });
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,241 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="master_Careers.master.cs"
+    Debug="false" Inherits="master_Careers" EnableViewState="false" %>
+
+<%@ Register TagName="sitemap_div" TagPrefix="footer" Src="~/UserControls/footer_bottom.ascx" %>
+<%@ Register TagPrefix="cem" TagName="sitemap" Src="~/Sitemap.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>CEM | Careers</title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+    <link rel="icon" href="../Images/titlelogo.png" type="image/png" />
+    <link href="../Styles/print.css" rel="stylesheet" type="text/css" media="print" />
+    <meta name="description" content="CEM has been implementing Microsoft Dynamics ERP and CRM since the last 10 years. We service customers in 19 industries which include projects, construction, oil and gas, retail, manufacturing and distribution & logistics.  " />
+    <meta name="keywords" content="cem, cembs, crm, erp, microsoft dynamics, customer relationship management, erp software, erp system, navision, crm software, enterprise resource planning, microsoft dynamics crm, microsoft crm" />
+    <meta name="robots" content="index, follow" />
+    <link href="../Styles/mobile.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google analytics -->
+    <script type="text/javascript">        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-36372906-1']); _gaq.push(['_setDomainName', 'cembs.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+    <!-- end google analytics -->
+    <link href="../Styles/v3/common-style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/v3/home-style.css" rel="stylesheet" type="text/css" />
+    <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css' />
+    <link href="../Styles/v3/jquery.feedback_me.css" rel="stylesheet" type="text/css">
+    
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <script src="../Scripts/jquery.min.js" type="text/javascript"></script>
+    <link href="../Styles/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/bg_change.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/OthersPages/ulreasons.css" rel="stylesheet" type="text/css" />
+    <script src="clearbox.js" type="text/javascript"></script>
+    <link href="Styles/Careers.css" rel="stylesheet" type="text/css" /><link href="../Styles/cem_styles.css" rel="stylesheet" type="text/css" />
+    <!-- ajax tabs -->
+    <link href="../Styles/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Default Action
+            $(".tab_content").hide(); //Hide all content
+            $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show(); //Show first tab content
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".tab_content").hide(); //Hide all tab content
+                var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active content
+                return false;
+            });
+        });
+    </script>
+    <!-- end ajax tabs -->
+    <script src="../Scripts/sliding_social.js" type="text/javascript"></script>
+    <script src="../Scripts/easyTooltip.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a#facebook").easyTooltip({
+                tooltipId: "easyTooltip_facebook",
+                content: 'Facebook'
+            });
+            $("a#twitter").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: 'Twitter'
+            });
+            $("a#flickr").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: 'Flickr'
+            });
+            $("a#google").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: 'GooglePlus'
+            });
+            $("a#slideshare").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: 'Slideshare'
+            });
+        });
+    </script>
+   
+
+
+
+    <style type="text/css">
+        #easyTooltip_facebook, #easyTooltip_twitter, #easyTooltip_google, #easyTooltip_flickr, #easyTooltip_slideshare
+        {
+            padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+        #easyTooltip
+        {
+            padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+    </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        img
+        {
+            border: none;
+        }
+    </style>
+    <meta name="viewport" content = "width = device-width, initial-scale = 1.0, minimum-scale = 1.0, maximum-scale = 1.0, user-scalable = no" />
+    <link href="css/footable.core.min.css" rel="stylesheet" type="text/css" />
+    <script src="js/footable.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+    
+        <div class="header" style="clear:both;">
+            <div class="logo">
+                <a href="../">
+                    <img src="../Images/logo.png" width="193" height="62" class="noImgBorder" alt="CEM Business Solutions, ERP Consultant, MS Dynamics" /></a>
+            </div>
+            <div class="header_rightContent">
+                <div class="toplinks" style="height:13px;">
+                </div>
+                <div class="logolinks">
+                    <div class="float_left">
+                         <img src="images/microsoft_gold_partner.jpg" id="gold" width="185" height="64" alt="Gold partner" style="margin-right: 10px;" />
+        
+                    </div>
+                    <div class="float_left">
+                        <img src="images/cfmd_logo.png" id="CFMD" width="123" height="64" alt="CFMD"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top-nav">
+            <div class="nav-container">
+                <ul class="menu">
+                    <li><a href="/Careers/">Careers Home</a></li>
+                    <li><a href="CurrentOpportunities.aspx">Current Opportunities</a></li>
+                    <li><a href="SubmitProfile.aspx?jobid=0" rel="clearbox[width=700,,height=600]">Submit
+                        Resume</a></li>
+                    <li><a href="../Contactus.aspx">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+        <%--<div class="menu">
+            <div id="smoothmenu1" class="ddsmoothmenu" style="background: url(../Images/menubarfull.png)">
+                <ul id="mega-menu-1" class="mega-menu">
+                    <li><a href="/Careers/">Careers Home</a></li>
+                    <li><a href="CurrentOpportunities.aspx">Current Opportunities</a></li>
+                    <li><a href="SubmitProfile.aspx?jobid=0" rel="clearbox[width=700,,height=600]">Submit
+                        Resume</a></li>
+                    <li><a href="../Contactus.aspx">Contact us</a></li>
+                </ul>
+            </div>
+            <%--<div class="menu_home float_left">
+                <a href="../Index.aspx">
+                    <div class="home_img">
+                    </div>
+                </a>
+            </div>
+            <div class="float_left">
+                <ul class="nav-main">
+                    <li><a href="index.aspx">Careers Home</a></li>
+                    <li><a href="CurrentOpportunities.aspx">Current Opportunities</a></li>
+                    <li><a href="SubmitProfile.aspx?jobid=0" rel="clearbox[width=700,,height=600]">Submit
+                        Resume</a></li>
+                    <li><a href="../Contactus.aspx">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="rightedge">
+            </div>--%>
+        <div class="content_div">
+            <%--<div style="padding: 0 0 5px 10px; background: #f1f1f1">
+                <cem:sitemap ID="sitemap" runat="server" />
+            </div>--%>
+            <div style="width: 945px; padding: 0 30px 0 20px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <footer:sitemap_div ID="footer_sitemapDiv" runat="server" />
+        <%--<div id="sitemapfooter_div">
+            <div class="sitemap">
+                <ul>
+                    <li><a href="../Index.aspx">Home</a></li>
+                    <li><a href="../Sitemap.aspx">Sitemap</a></li>
+                    <li><a href="../PrivacyPolicy.aspx" rel="clearbox[width=800,,height=600]">Privacy Policy</a></li>
+                    <li><a href="../Awards.aspx">Awards</a></li>
+                    <li><a href="../Contactus.aspx">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="icons">
+                    <a href="http://www.facebook.com/cembs"
+                        target="_blank">
+                        <img src="../Images/facebook.png" width="25" height="43" alt="Facebook" /></a></div>
+                <div class="icons">
+                    <a href="https://plus.google.com/u/0/105840593372061158513/posts" target="_blank">
+                        <img src="../Images/google.png" width="25" height="43" alt="Google" /></a></div>
+                <div class="icons">
+                    <a href="http://www.flickr.com/photos/cembs/?hide_photostream_welcome=1" target="_blank">
+                        <img src="../Images/flickr.png" width="25" height="43" alt="Flickr" /></a></div>
+                <div class="icons">
+                    <a href="https://twitter.com/CEMBSglobal" target="_blank">
+                        <img src="../Images/twitter.png" width="25" height="43" alt="Switter" /></a></div>
+                <div class="icons">
+                    <a href="http://www.slideshare.net/CEMBSIndia" target="_blank">
+                        <img src="../Images/slideshare.png" width="25" height="43" alt="Slideshare" /></a></div>
+            </div>
+        </div>--%>
+        <div class="copyrights_div">
+           <%-- © 2012 CEM Business Solutions. All rights reserved.--%>
+        </div>
+    </div>
+    </form>
+    <script type="text/javascript">        var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">        stLight.options({ publisher: "5ff7f6c6-c278-4c6c-ad11-772b1fe01c40", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+</body>
+</html>

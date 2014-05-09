@@ -1,0 +1,2 @@
+﻿.ui-autocomplete {max-height: 100px;overflow-y: auto;overflow-x: hidden;padding-right: 20px;background: #605651;color: #d8d7cf;font-size: 11px;width: 287px;top: 160px;padding-left:8px;}
+* html .ui-autocomplete{height: 100px;}

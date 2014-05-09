@@ -1,0 +1,476 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Debug="false"
+    Inherits="MasterPage" %>
+
+<%@ Register TagName="sitemap_div" TagPrefix="footer" Src="~/sitemap_div_footer.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Human Capital Management</title>
+    <link rel="icon" href="../../Images/titlelogo.png" type="image/png" />
+    <link href="../Styles/mobile.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ajax tabs -->
+    <link href="../Styles/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.js" type="text/javascript"></script>
+    <script src="../clearbox.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function alertwindow(message) {
+            //debugger
+            alert(message);
+            window.location = 'Index.aspx';
+        }
+    </script>
+    <!-- end ajax tabs -->
+    <style type="text/css">
+        .ul_reasons li:hover{}
+        .ul_reasons li a
+        {
+            display:block;
+            width:245px;
+            line-height: 31px;
+            padding-bottom: 7px;
+            padding-left: 25px;
+            background-repeat:no-repeat;
+            background-image: url("../Images/hnav-small.png");
+            text-decoration: none;
+            color: #fff;
+        }
+        .ul_reasons li a:hover
+        {background-image: url("../Images/hnav-small-hover.png");
+            text-decoration: none;
+            color:#000;
+        }
+        img
+        {
+            border: none;
+        }
+        .style1
+        {
+            width: 100px;
+            font-size: 13px;
+        }
+        .style2
+        {
+            width: 205px;
+            font-size: 12px;
+        }
+        .request_form
+        {
+            margin: 0 auto;
+            padding: 10px 25px;
+            display: block;
+            border: 0;
+        }
+        .request_form td
+        {
+            padding: 0;
+            margin: 0;
+        }
+        .request_form input[type="text"], .request_form input[type="email"], .request_form input[type="tel"], .request_form input[type="url"], .request_form textarea
+        {
+            /*            box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+            -webkit-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;
+            -moz-box-shadow: inset 0 1px 2px #DDD, 0 1px 0 #FFF;*/
+            border: 1px solid #CCC;
+            margin: 3px 0 0px 0;
+            padding: 5px 5px;
+            border-radius: 0px;
+        }
+        .request_form .style2 .button
+        {
+            background: #106fa5;
+            border: none;
+            display: block;
+            font-size: 16px;
+            height: 26px;
+            margin-top: 5px;
+            padding-bottom: 26px;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 10px;
+            color: #fff;
+            cursor: pointer;
+            width: 100px;
+        }
+        .request_form td
+        {
+            line-height: 30px;
+        }
+    </style>
+    <link href="../Styles/services.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="Scripts/countDays.js" type="text/javascript"></script>
+    <style type="text/css">
+        #timer
+        {
+            font-size: 14px;
+            color: #fff;
+            padding: 0px 0 0 15px;
+            overflow: visible;
+            margin: 10px 0 0 0; /*background: #6B9019;*/
+            background: #e7b829;
+        }
+        #timer .days
+        {
+            background: #fff;
+            font-size: 30px;
+            color: #262626;
+            font-family: DS-Digital;
+            padding: 5px;
+            box-shadow: 1px 1px 1px #505050 inset;
+            border-radius: 7px;
+        }
+        .event
+        {
+            font-family: Segoe UI;
+            padding: 10px 10px 10px 16px;
+            font-size: 18px;
+        }
+        .ul_reasons
+        {
+            padding-bottom: 0;
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 5px;
+        }
+        .ul_reasons li
+        {
+            -moz-text-decoration-color: -moz-use-text-color;
+            -moz-text-decoration-line: none;
+            -moz-text-decoration-style: solid;
+            background-attachment: scroll;
+            background-clip: border-box;
+            background-color: rgba(0, 0, 0, 0);
+            background-origin: padding-box;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: auto auto;
+            list-style: none;
+            font-size: 13px;
+        }
+        .ul_reasons li:hover{}
+        .ul_reasons li a
+        {
+            display:block;
+            width:245px;
+            line-height: 31px;
+            padding-bottom: 7px;
+            padding-left: 25px;
+            background-repeat:no-repeat;
+            background-image: url("../Images/hnav-small.png");
+            text-decoration: none;
+            color: #fff;
+        }
+        .ul_reasons li a:hover
+        {background-image: url("../Images/hnav-small-hover.png");
+            text-decoration: none;
+            color:#000;
+        }
+        .content_div p
+        {
+            line-height: 20px;
+        }
+        #footer ul
+        {
+            margin: 0;
+            padding: 0;
+        }
+        #footer
+        {
+            background-color: #000;
+            box-shadow: none;
+            border: none;
+            width: 100%;
+        }
+        #footer .tab1, .tab2, .tab3, .tab4, .tab5
+        {
+            float: left;
+            padding: 0 15px 0 20px;
+            min-width: 200px;
+            height: 160px;
+            border-right: 0px solid #505050;
+            border-left: 0px solid #132859;
+        }
+        #footer .tab1
+        {
+            border-left: 0px solid #2c2623;
+            padding-left: 0px !important;
+        }
+        #footer .tab4
+        {
+            border-right: 0px solid #695e5a;
+            padding-right: :0px;
+        }
+        #footer h3
+        {
+            color: #FFD24A;
+            font-family: segoe ui, sans-serif !important;
+            font-size: 22px;
+            font-weight: lighter;
+            text-align: left;
+        }
+        #footer ul
+        {
+            padding: 0;
+            font-size: 12px;
+            font-family: segoe ui, sans-serif;
+            color: #c9c5c5;
+        }
+        #footer ul li
+        {
+            list-style: none;
+            text-decoration: none;
+            text-align: left;
+            line-height: 18px;
+        }
+        #footer ul li a
+        {
+            color: #fff;
+            text-decoration: none;
+        }
+        #sitemapfooter_div
+        {
+            background: #312c29;
+            height: 44px;
+            width: 980px;
+            font-family: segoe ui, sans-serif;
+            font-size: 13px;
+            position: relative;
+            -moz-border-radius-bottomright: 5px;
+            -moz-border-radius-bottomleft: 5px;
+            -webkit-border-radius-bottomright: 5px;
+            -webkit-border-radius-bottomleft: 5px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+            behavior: url(../border-radius.htc);
+        }
+        #footer .sitemap
+        {
+            float: left;
+        }
+        #footer .sitemap ul
+        {
+            color: #fff;
+            list-style: none;
+            font-size: :13px;
+            margin: 10px 0 0;
+            padding-left: 10px;
+            text-decoration: none;
+        }
+        #footer .sitemap ul li
+        {
+            float: left;
+            text-align: center;
+            padding: 0 8px;
+        }
+        #footer .sitemap ul li a
+        {
+            color: #fff;
+            text-decoration: none;
+        }
+        #footer .social
+        {
+            display: block;
+            float: left;
+        }
+        #footer .social .icons
+        {
+            float: left;
+            padding: 1px 5px 0 5px;
+            border: none;
+        }
+        #footer .social .icons img:hover
+        {
+            border: none;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+            -moz-opacity: 0.5;
+        }
+        #footer .social .icons img
+        {
+            border: none;
+            filter: alpha(opacity=100);
+            opacity: 1;
+            -moz-opacity: 1;
+        }
+        #footer .social .icons a
+        {
+            border: none;
+            text-decoration: none;
+        }
+        .copyrights_div
+        {
+            float: right;
+            text-align: right;
+            font-size: 11px;
+            font-family: Segoe UI;
+            color: #636363;
+            padding-top: 5px;
+        }
+    </style>
+    <link href="../Styles/OthersPages/MaskPopup.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../Scripts/OtherPages/MaskPopupSetTimeout.js"></script>
+    <style type="text/css">
+        a.downloadlink
+        {
+            float: right;
+            color: #7e9c1a;
+        }
+    </style>
+</head>
+<body class="body" style="background: url('bg.jpg') repeat-x #000; margin-top: 20px;">
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div class="header">
+            <img src="header.jpg" width="962" height="299" alt="hcm" />
+        </div>
+        <div class="content_div" style="margin-top: 211px; width: 971px; box-shadow: none;
+            font-size: 13px; color: #000;">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <%--<div id="sitemapfooter_div" style="background-color: #000 !important; border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px; clear: both; margin: 7px 0 0 0">
+            <div class="sitemap">
+                <ul>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../Careers/">Jobs</a></li>
+                    <li><a href="../CEMSitemap.aspx">Sitemap</a></li>
+                    <li><a rel="clearbox[width=800,,height=600]" href="../PrivacyPolicy.aspx">Privacy Policy</a></li>
+                    <li><a href="../News.aspx">News</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="icons">
+                    <a href="https://www.facebook.com/cembs" id="facebook" target="_blank" style="display: block">
+                        <img src="../images/facebook.png" width="25" height="43" alt="Facebook" /></a></div>
+                <div class="icons">
+                    <a href="https://plus.google.com/+CembsGlobal" id="google" target="_blank">
+                        <img src="../images/google.png" width="25" height="43" alt="Google" /></a></div>
+                <div class="icons">
+                    <a href="http://www.linkedin.com/company/cem-business-solutions" id="linkedin" target="_blank">
+                        <img src="../images/linkedin.png" width="25" height="43" alt="Linked In" /></a></div>
+                <div class="icons">
+                    <a href="https://twitter.com/cembsglobal" id="twitter" target="_blank">
+                        <img src="../images/twitter.png" width="25" height="43" alt="Twitter" /></a></div>
+                <div class="icons">
+                    <a href="http://www.youtube.com/user/CEMBSglobal" id="youtube" target="_blank">
+                        <img class="noImgBorder" src="../Images/youtube-icon.png" width="25" height="43"
+                            alt="Youtube" /></a></div>
+            </div>
+        </div>--%>
+        <div id="footer" class="container">
+            <div class="tab1">
+                <h3>
+                    Dynamics Products</h3>
+                <ul>
+                    <li><a title="Microsoft Dynamics AX" runat="server" id="ax" href="http://cembs.com/Microsoft-Dynamics-AX.aspx">
+                        Microsoft Dynamics AX</a></li>
+                    <li><a title="Microsoft Dynamics CRM" runat="server" id="crm" href="http://cembs.com/Microsoft-Dynamics-CRM.aspx">
+                        Microsoft Dynamics CRM</a></li>
+                    <li><a title="Microsoft Dynamics GP" runat="server" id="gp" href="http://cembs.com/Microsoft-Dynamics-GP.aspx">
+                        Microsoft Dynamics GP</a></li>
+                    <li><a title="Microsoft Dynamics NAV" runat="server" id="nav" href="http://cembs.com/Microsoft-Dynamics-NAV.aspx">
+                        Microsoft Dynamics NAV</a></li>
+                    <li><a title="Microsoft Dynamics SL" runat="server" id="sl" href="http://cembs.com/Microsoft-Dynamics-SL.aspx">
+                        Microsoft Dynamics SL</a></li>
+                </ul>
+            </div>
+            <div class="tab2">
+                <h3>
+                    Industries</h3>
+                <ul>
+                    <li><a href="http://cembs.com/Construction-Management.aspx" runat="server"
+                        id="construction" title="Construction">Construction</a></li>
+                    <li><a href="http://cembs.com/ERP-for-Manufacturing.aspx" runat="server"
+                        id="manufacturing" title="Manufacturing">Manufacturing</a></li>
+                    <li><a href="http://cembs.com/ProfessionalServices.aspx" runat="server" id="professional"
+                        title="Professional Services">Professional Services</a></li>
+                    <li><a href="http://cembs.com/Project-Management-Software.aspx" runat="server"
+                        id="projects" title="Projects">Projects</a></li>
+                    <li><a href="http://cembs.com/Retail-Management.aspx" runat="server" id="retail"
+                        title="Retail">Retail</a></li>
+                </ul>
+            </div>
+            <div class="tab3">
+                <h3>
+                    Unique Solutions</h3>
+                <ul>
+                    <li><a href="http://cembs.com/CEM-AX-Payroll" runat="server" id="payroll"
+                        title="CEM AX Payroll">CEM AX Payroll</a> </li>
+                    <li><a href="http://cembs.com/CEM-AX-Construct.aspx" runat="server" id="construct"
+                        title="CEM AX Construct">CEM AX Construct</a></li>
+                    <li>
+                        <div class="social">
+                            <div class="icons">
+                                <a href="https://www.facebook.com/cembs" id="facebook" target="_blank" style="display: block">
+                                    <img src="../images/facebook.png" width="25" height="43" alt="Facebook" /></a></div>
+                            <div class="icons">
+                                <a href="https://plus.google.com/+CembsGlobal" id="google" target="_blank">
+                                    <img src="../images/google.png" width="25" height="43" alt="Google" /></a></div>
+                            <div class="icons">
+                                <a href="http://www.linkedin.com/company/cem-business-solutions" id="linkedin" target="_blank">
+                                    <img src="../images/linkedin.png" width="25" height="43" alt="Linked In" /></a></div>
+                            <div class="icons">
+                                <a href="https://twitter.com/cembsglobal" id="twitter" target="_blank">
+                                    <img src="../images/twitter.png" width="25" height="43" alt="Twitter" /></a></div>
+                            <div class="icons">
+                                <a href="http://www.youtube.com/user/cembusinesssolutions" id="youtube" target="_blank">
+                                    <img class="noImgBorder" src="../Images/youtube-icon.png" width="25" height="43"
+                                        alt="Youtube" /></a></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab4">
+                <a href="/" style="display: block; padding-top: 40px;">
+                    <img src="../images/v3/logo-f.png" width="193" height="62" alt="CEM Business Solutions, ERP Consultant, MS Dynamics" /></a><br />
+                <div class="sitemap">
+                    <ul>
+                        <li><a href="/">Home </a></li>
+                        <li><a href="../CEMSitemap.aspx">Sitemap</a></li>
+                        <li><a href="http://us.cembs.com/contact">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <%--<div id="sitemapfooter_div">
+            <div class="sitemap">
+                <ul>
+                    <li><a href="../Index.aspx">Home</a></li>
+                    <li><a href="../Sitemap.aspx">Sitemap</a></li>
+                    <li><a href="../PrivacyPolicy.aspx" rel="clearbox[width=800,,height=600]">Privacy Policy</a></li>
+                    <li><a href="../Awards.aspx">Awards</a></li>
+                    <li><a href="../Contactus.aspx">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <div class="icons">
+                    <a href="http://www.facebook.com/cembs"
+                        target="_blank">
+                        <img src="../Images/facebook.png" alt="Facebook" /></a></div>
+                <div class="icons">
+                    <a href="https://plus.google.com/u/0/105840593372061158513/posts" target="_blank">
+                        <img src="../Images/google.png" alt="Google" /></a></div>
+                <div class="icons">
+                    <a href="http://www.flickr.com/photos/cembs/?hide_photostream_welcome=1" target="_blank">
+                        <img src="../Images/flickr.png" alt="Flickr" /></a></div>
+                <div class="icons">
+                    <a href="https://twitter.com/CEMBSglobal" target="_blank">
+                        <img src="../Images/twitter.png" alt="Switter" /></a></div>
+                <div class="icons">
+                    <a href="http://www.slideshare.net/CEMBSIndia" target="_blank">
+                        <img src="../Images/slideshare.png" alt="Slideshare" /></a></div>
+            </div>
+        </div>--%>
+    <%--<div class="copyrights_div">
+            © 2012 CEM Business Solutions. All rights reserved.
+        </div>
+    </div>--%>
+    <script type="text/javascript">        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-36372906-1']); _gaq.push(['_setDomainName', 'cembs.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+    </form>
+</body>
+</html>

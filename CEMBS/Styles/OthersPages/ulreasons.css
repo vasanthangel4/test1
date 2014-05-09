@@ -1,0 +1,11 @@
+﻿.ul_reasons
+{
+    padding: 10px 0 0 18px;
+}
+.ul_reasons li
+{
+    list-style: url("../../Images/arrow.jpg");
+    text-decoration: none;
+    line-height: 18px;
+    padding-bottom:5px;
+}

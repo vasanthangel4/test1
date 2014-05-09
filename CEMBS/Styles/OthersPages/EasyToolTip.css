@@ -1,0 +1,93 @@
+﻿img
+{
+    border: none;
+}
+pre
+{
+    display: block;
+    font: 12px "Courier New" , Courier, monospace;
+    padding: 10px;
+    border: 1px solid #bae2f0;
+    background: #e3f4f9;
+    margin: .5em 0;
+}
+
+/* Easy Tooltip */
+
+#easyTooltip
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    width: 260px;
+    margin: -100px 0 0 0;
+    opacity: 0.96;
+}
+#easyTooltip_us
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    width: 260px;
+    margin: -100px 0 0 0;
+    opacity: 0.96;
+}
+#easyTooltip_singapore
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    width: 260px;
+    margin: -100px 0 0 0;
+    opacity: 0.96;
+}
+#easyTooltip_india
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    width: 260px;
+    margin: -300px 0 0 0;
+    opacity: 0.96;
+}
+#easyTooltip_uae
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg2.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    width: 360px;
+    margin: -300px 0 0 10px;
+    opacity: 0.96;
+}
+#easyTooltip_uk
+{
+    padding: 5px 10px; /*border: 1px solid #e1e1e1;*/
+    background: #584C47 url(bg.gif) repeat-x;
+    color: #fff;
+    font-size: 11px;
+    opacity: 0.96;
+}
+#easyTooltip1 h4, #easyTooltip1 p
+{
+    margin: .25em 0;
+}
+#us, #uae, #uk, #india, #singapore
+{
+    cursor: default;
+}
+#us
+{
+    left: 10px;
+}
+
+/* // Easy Tooltip */
+
+.style2
+{
+    height: 26px;
+}

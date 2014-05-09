@@ -1,0 +1,1 @@
+﻿$(document).ready(function () {$("#supportLogin_form").hide();$("#supportLogin_link").hover(function () {var children = jQuery(this).children("#supportLogin_form");if (children.is(":hidden")) {children.show("slide", { direction: "left" }, 500);}},function () {var children = jQuery(this).children("#supportLogin_form");children.hide("slide", { direction: "left" }, 500);});});

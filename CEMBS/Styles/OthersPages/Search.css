@@ -1,0 +1,35 @@
+﻿.SearchList
+{
+    padding: 5px 0 5px 0;
+}
+#search
+{
+    font-family: Segoe UI;
+    padding: 10px;
+    padding-left: 20px;
+}
+#search a.page_title
+{
+    color: #067ab3;
+    font-size: 18px;
+}
+#search a.page_title:visited
+{
+    color: #000;
+    font-size: 18px;
+}
+#search .page_url
+{
+    color: Green;
+    font-style: italic;
+    font-size: 12px;
+}
+#search hr
+{
+    height: 1px;
+    border: 1px dotted #505050;
+}
+#search .page_content
+{
+    font-size: 12px;
+}

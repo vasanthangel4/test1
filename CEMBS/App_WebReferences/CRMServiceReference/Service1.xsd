@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://cem.dns2go.com:92/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/IntegrationService" />
+  <xs:element name="Test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="word" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TestResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TestResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="subject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="lastname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="companyname" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="emailaddress" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mobileno" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="website" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/IntegrationService" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/IntegrationService" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFinancialData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="org" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="email" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="finance" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inventory" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sales" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="salesorder" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="warehouse" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="matrics" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="PLReport" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="actualproject" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="budget" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="customerinvoice" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="projectprofit" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="revenue" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="cashflow" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="teamallocation" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getFinancialDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getFinancialDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

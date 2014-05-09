@@ -1,0 +1,10 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ExtendedMenu.ascx.cs"
+    Inherits="ExtendedMenu" %>
+<%@ Register TagPrefix="cem" TagName="sitemap" Src="Sitemap.ascx" %>
+<%@ Register TagName="searchcontrol" TagPrefix="search" Src="Search_control.ascx" %>
+<div class="extended_menu">
+    <div class="float_left">
+        <cem:sitemap ID="sitemap" runat="server" />
+    </div>
+    <search:searchcontrol ID="search" runat="server" />
+</div>

@@ -1,0 +1,45 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.IO;
+
+public partial class test : System.Web.UI.Page
+{
+    protected void Page_Load(object sender , EventArgs e)
+    {
+        //string htmlFilePath = Server.MapPath("AX/terrychat.docx.htm");
+        ////Read the Html File as Byte Array and Display it on browser
+        //byte[] bytes;
+        //using (FileStream fs = new FileStream(htmlFilePath.ToString() , FileMode.Open , FileAccess.Read))
+        //{
+        //    BinaryReader reader = new BinaryReader(fs);
+        //    bytes = reader.ReadBytes((int)fs.Length);
+        //    fs.Close();
+        //}
+        //Response.BinaryWrite(bytes);
+        //Response.Flush();
+    }
+    protected void GenerateMsWordDoc()
+    {
+
+        //string strBody = "<html>" +
+        //    "<body>" +
+        //        "<div>Your name is: <b> Naresh </b></div>" +
+        //        "<table width='100%' style='background-color:#cfcfcf;'><tr><td>1st Cell body data</td><td>2nd cell body data</td></tr></table>" + "Ms Word document generated successfully." +
+        //    "</body>" +
+        //    "</html>";
+        //string fileName = "AX/terrychat.docx";
+
+        //// You can add whatever you want to add as the HTML and it will be generated as Ms Word docs
+
+        //Response.AppendHeader("Content-Type" , "application/msword");
+
+        //Response.AppendHeader("Content-disposition" , "attachment; filename=" + fileName);
+
+        //Response.Write(strBody);
+
+    }
+}

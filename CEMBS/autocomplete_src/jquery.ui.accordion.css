@@ -1,0 +1,10 @@
+.ui-accordion{width:100%;font-size:11px;font-family:Segoe UI;height:300px;overflow:hidden;}
+.ui-accordion p{line-height:15px;margin:0;padding:10px 0 0 0;}
+.ui-accordion .ui-accordion-header{cursor:pointer;position:relative;margin:0px 0 1px 0;padding:0 0 0 0;zoom:1;background:url("../Images/accordion_active_bg.png") no-repeat scroll -5px 50% #534C4A;font-size:12px;text-decoration:none;color:#ffffff;height:30px;}
+.ul-accordion .ui-accordion-header:hover{background:#eaa309;}
+.ui-accordion-icons .ui-accordion-header:hover{background:url("../Images/accordion_active_bg.png") no-repeat -5px 50% #eaa309;color:#000;}
+.ui-accordion .ui-accordion-header a{color:#FFFFFF;display:inline-block;font-size:12px;height:22px;padding:7px 5px 1px 0px;text-decoration:none;position:absolute;}
+.ui-accordion-icons .ui-accordion-header a{padding-left:40px;}
+.ui-accordion .ui-accordion-header .ui-icon{position:absolute;left:5px;top:50%;margin-top:-8px;}
+.ui-accordion .ui-accordion-content{padding:0px 15px 0px 20px;border-top:0;margin-top:0px;height:110px;overflow:hidden;position:relative;top:0px;margin-bottom:2px;display:none;zoom:1;}
+.ui-accordion .ui-accordion-content-active{display:block;overflow:hidden;}

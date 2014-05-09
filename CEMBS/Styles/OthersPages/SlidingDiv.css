@@ -1,0 +1,17 @@
+﻿.show_hide
+{
+    display: none;
+    cursor: pointer;
+    border-top: none;
+}
+.slidingDiv
+{
+    height: 100;
+    padding: 0px;
+}
+/*.slidingDiv img
+{
+    width: 20px;
+    height: 20px;
+    float: left;
+}*/

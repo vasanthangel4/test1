@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Debug="false" Inherits="Mailer_MasterPage" %>
+
+<%@ Register TagName="sitemap_div" TagPrefix="footer" Src="~/sitemap_div_footer.ascx" %>
+<%@ Register TagPrefix="footer" TagName="cem_landingfooter" Src="~/UserControls/LandingPageFooter.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <link rel="icon" href="../../Images/titlelogo.png" type="image/png" />
+    <link href="../../Styles/mobile.css" rel="stylesheet" type="text/css" /><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript">
+        function alertwindow(message) {
+            //debugger
+            alert(message);
+            window.location = 'Index.aspx';
+        }
+    </script>
+    <script src="../clearbox.js" type="text/javascript"></script>
+    <!-- ajax tabs -->
+    <link href="../../Styles/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.js" type="text/javascript"></script>
+    
+    <!-- end ajax tabs -->
+    <script src="../Scripts/sliding_social.js" type="text/javascript"></script>
+    <script src="../Scripts/easyTooltip.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a#facebook").easyTooltip({
+                tooltipId: "easyTooltip_facebook",
+                content: '<h2>Facebook</h2>'
+            });
+            $("a#twitter").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Twitter</h2>'
+            });
+            $("a#flickr").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Flickr</h2>'
+            });
+            $("a#google").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>GooglePlus</h2>'
+            });
+            $("a#slideshare").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Slideshare</h2>'
+            });
+        });
+    </script>
+    <style type="text/css">
+        #easyTooltip_facebook, #easyTooltip_twitter, #easyTooltip_google, #easyTooltip_flickr, #easyTooltip_slideshare
+        {
+            padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+        #easyTooltip
+        {
+            padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+            background: #262626;
+            color: #fff;
+            font-size: 11px;
+            min-width: 70px;
+            height: 30px;
+            font-weight: normal;
+            margin: -10px 0 0 0;
+            opacity: 0.90;
+            display: block;
+            position: absolute;
+        }
+    </style>
+    <link href="../Styles/services.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <script src="Scripts/countDays.js" type="text/javascript"></script>
+    <style type="text/css">
+        #timer
+        {
+            font-size: 14px;
+            color: #fff;
+            padding: 0px 0 0 15px;
+            overflow: visible;
+            margin: 10px 0 0 0; /*background: #6B9019;*/
+            background: #e7b829;
+        }
+        #timer .days
+        {
+            background: #fff;
+            font-size: 30px;
+            color: #262626;
+            font-family: DS-Digital;
+            padding: 5px;
+            box-shadow: 1px 1px 1px #505050 inset;
+            border-radius: 7px;
+        }
+        .event
+        {
+            font-family: Segoe UI;
+            padding: 10px 10px 10px 16px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body class="body">
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div class="header">
+            <div class="logo">
+                <a href="../Index.aspx">
+                    <img src="../Images/cem_logo.png" class="noImgBorder" alt="CEM Business Solutions, ERP Consultant, MS Dynamics" /></a>
+            </div>
+            <div class="header_rightContent">
+                <div class="toplinks">
+                    <!--div class="links">
+                        Downloads   |  Blog  |  Faq  |   Support Login</div-->
+                    <!--div class="social">
+                        FB</div-->
+                </div>
+                <div class="logolinks">
+                    <div class="float_left">
+                        <asp:Image ID="Image2" ImageUrl="../Images/microsoft_gold_partner.jpg" Width="120"
+                            Height="56" AlternateText="Gold partner" runat="server" Style="margin-right: 30px;" />
+                    </div>
+                    <div class="float_left">
+                        <img id="Img2" class="noImgBorder" src="../Images/cfmd_logo.png" width="123" height="64"
+                            alt="CFMD" runat="server" />
+                        <%--<img src="~/Images/microsoft_gold_partner.jpg" alt="Microsoft gold certified partner" runat="server"/>--%>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%--<div class="menu">
+            <div class="menu_home float_left">
+                <a href="../../Index.aspx">
+                    <div class="home_img">
+                    </div>
+                </a>
+            </div>
+            <div class="float_left">
+                <ul class="nav-main">
+                </ul>
+            </div>
+            <div class="rightedge">
+            </div>
+        </div>--%>
+        
+        <div class="content_div">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            
+        </div>
+        <div id="sitemapfooter_div" style="background-color: #106aff !important; border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px; clear: both; margin: 7px 0 0 0">
+    <div class="sitemap">
+        <ul>
+            <li><a href="/" id="f_home">Home</a></li>
+            <li><a href="http://www.cembs.com/blog/" id="f_blog" target="_blank">Blog</a></li>
+            <li><a href="../Contactus.aspx" id="f_contact">Contact us</a></li>
+        </ul>
+    </div>
+    <div class="social">
+        <div class="icons">
+            <a href="http://www.facebook.com/cembs" id="facebook" target="_blank">
+                <img class="noImgBorder" src="../Images/facebook.png" width="25" height="43" alt="Facebook" /></a></div>
+        <div class="icons">
+            <a href="https://plus.google.com/u/0/105840593372061158513/posts" id="google" target="_blank">
+                <img class="noImgBorder" src="../Images/google.png" width="25" height="43" alt="Google" /></a></div>
+        <div class="icons">
+            <a href="http://www.linkedin.com/company/cem-business-solutions-pvt.-ltd.?trk=nav_account_sub_nav_company_admin
+" id="linkedin" target="_blank">
+                <img class="noImgBorder" src="../Images/linkedin.png" width="25" height="43" alt="linkedin" /></a></div>
+        <div class="icons">
+            <a href="https://twitter.com/CEMBSglobal" id="twitter" target="_blank">
+                <img class="noImgBorder" src="../Images/twitter.png" width="25" height="43" alt="Twitter" /></a></div>
+    </div>
+</div>
+<div class="copyrights_div">
+    © 2014 CEM Business Solutions. All rights reserved.
+</div>
+</div>
+    <!-- google analytics -->
+    <script type="text/javascript">        var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-36372906-1']); _gaq.push(['_setDomainName', 'cembs.com']); _gaq.push(['_setAllowLinker', true]); _gaq.push(['_trackPageview']); (function () { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+    <!-- end google analytics -->
+    
+    <script type="text/javascript">        var switchTo5x = true;</script>
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">        stLight.options({ publisher: "5ff7f6c6-c278-4c6c-ad11-772b1fe01c40", doNotHash: false, doNotCopy: false, hashAddressBar: false });</script>
+    </form>
+</body>

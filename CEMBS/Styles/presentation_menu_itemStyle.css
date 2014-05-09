@@ -1,0 +1,8 @@
+.item{float:left;width:244px;height:150px;margin:0px 1px 0px 0;overflow:hidden;position:relative;float:left;font-family:Segoe UI;}
+.item .caption{width:244px;height:150px;background:#000;color:#fff;font-weight:normal;position:absolute;left:0;display:none;filter:alpha(opacity=88);-moz-opacity:0.88;-khtml-opacity:0.88;opacity:0.88;font-size:11px;padding:15px 0 0 10px;}
+.item .caption a{text-decoration:none;color:#00b9f8;padding:2px;display:block;font-size:16px;padding:0px 0 0 10px;}
+.item .caption p{padding:5px 0 0 10px;;margin:0;font-size:11px;}
+img{border:0;}
+.tophighlightbg_white{background:#fff;font:12px Arial, Helvetica, sans-serif;width:735px;color:#000;}
+.tophighlightbg_white img{position:absolute;}
+.thumbwrapleft{height:150px;float:left;}

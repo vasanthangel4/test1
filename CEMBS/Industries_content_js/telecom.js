@@ -1,0 +1,11 @@
+﻿document.write("<h1>Telecom<\/h2>");
+document.write("<p>Technology trends and customer demands has exponentially  grown witnessing peerless set of challenges in the telecom sector. The  constantly evolving technology and new innovations on one side and the changing  usage patterns due to the technology changes and getting adjusted to their  planned objectives and business models on the other side has created rapid  obsolescence leading to heavy competition in the market. Hence, Telecom  companies need to measure the market strategies, utilize them at optimal frequencies  and improve operational effectiveness to gain competitive edge. <br \/>");
+document.write("  CEM with its industrial experience offers a unique solution  that protects your core business by adapting the new techniques in the  technology trends and improve operational effectiveness across your entire  organization enabling you technologically viable. Integrated seamlessly with  Microsoft dynamics technology, our solution has been crafted precisely to  streamline your business process and improve overall function involved in the  telecom industry.<\/p>");
+document.write("<ul class=\"ul_reasons\">");
+document.write("  <li>Real time integration       throughout the organization<\/li>");
+document.write("  <li>Leverage technology trends and       customer demands and reduce time-to-market through innovative accelerated       solutions and ready-to-access frameworks.<\/li>");
+document.write("  <li>Optimize operational costs and       increase the ability to remain competitive in the next generation market       place.<\/li>");
+document.write("  <li>Provide&nbsp;superior customer       satisfaction through proven process capabilities<\/li>");
+document.write("  <li>Improved multi-country and       multi-currency support to serve your customers effectively<\/li>");
+document.write("  <li>Visibility across financial and       performance capabilities.<\/li>");
+document.write("<\/ul>");

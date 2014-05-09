@@ -1,0 +1,17 @@
+﻿#wrapper .tabs .tablinks
+{
+    color:#fff;
+    background: url("../../images/list.png") no-repeat scroll top right #FFFFFF;
+    display: block;
+    height: 30px;
+    /*margin: 1px 0 0 1px;*/
+    padding-left: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    width: 178px;
+}
+#wrapper .tabs a.tablinks:hover
+{
+    background: #FFFFFF;
+    color:#000;
+}

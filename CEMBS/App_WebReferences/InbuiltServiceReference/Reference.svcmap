@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="de8a9e8a-d2b6-44ee-a2e6-0ccaf8f67598" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.cembs.com/InbuiltService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="InbuiltService.wsdl" MetadataType="Wsdl" ID="19c3ef0f-e7dd-45f3-94a1-5ffe12362eb2" SourceId="1" SourceUrl="http://www.cembs.com/InbuiltService.svc?wsdl" />
+    <MetadataFile FileName="InbuiltService.xsd" MetadataType="Schema" ID="d405b230-ef2c-419d-a267-a439e65d58c0" SourceId="1" SourceUrl="http://www.cembs.com/InbuiltService.svc?xsd=xsd0" />
+    <MetadataFile FileName="InbuiltService2.xsd" MetadataType="Schema" ID="419e0668-665d-47fb-9cd7-396ca88985e5" SourceId="1" SourceUrl="http://www.cembs.com/InbuiltService.svc?xsd=xsd1" />
+    <MetadataFile FileName="InbuiltService.disco" MetadataType="Disco" ID="1ebe6962-b7ab-496e-b0df-00f956f574a0" SourceId="1" SourceUrl="http://www.cembs.com/InbuiltService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

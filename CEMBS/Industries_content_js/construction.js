@@ -1,0 +1,14 @@
+﻿document.write("<p>When a construction company grows from managing one project at a time, to managing several and when it begins to hire subcontractors, employ union employees, secure complex financing, cope with government regulations, it needs a software system that can see from one end of the enterprise to the other. It needs to provide \"revenue recognition\" at any given point in time. It needs ERP software like CEM AX Construct. CEM AX Construct sits on top of Microsoft Dynamics' newest, most powerful ERP solution: AX R2.<\/p>");
+document.write("<p>CEM's Construction Management solution offers an integrated, flexible construction management system that allows construction, projects, general contracting, sub-contracting and related service industries to manage complex business processes efficiently, increasing efficiency and lowering costs across the enterprise. Management gets a clear picture of the entire operation in real time, so decisions can be based on fact &ndash; not conjecture.<\/p>");
+document.write("<h2>Manage projects more effectively with CEM AX 2012 Construct<\/h2>");
+document.write("<ul class=\"ul_reasons\">");
+document.write("<li>Evaluate and maintain the profitability of projects<\/li>");
+document.write("<li>Manage and control costs and revenue all over the process, more effectively and efficiently, from proposal to delivery<\/li>");
+document.write("<li>Effectively utilize equipment and resources across projects<\/li>");
+document.write("<li>Access detailed financial and accounting information across the entire organization help improve project and decision management<\/li>");
+document.write("<li>Develop and enhance key business processes by automating complete operational functions<\/li>");
+document.write("<li>Improve uptime, dependability and avoid project delays<\/li>");
+document.write("<li>Manage and track all customer-facing activities through multiple channels from project inception to completion<\/li>");
+document.write("<li>Access a dashboard view of enterprise information using a familiar desktop interface<\/li>");
+document.write("<li>Effectively manage work force, resource, material, costs and revenue<\/li>");
+document.write("<\/ul>");

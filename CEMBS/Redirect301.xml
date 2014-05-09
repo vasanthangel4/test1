@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Redirects>
+  <Redirect>
+    <Description>Change of Index</Description>
+    <OldPage>/AX_index.aspx</OldPage>
+    <NewPage>/Microsoft-Dynamics-AX.aspx</NewPage>
+    <File>FALSE</File>
+  </Redirect>
+</Redirects>

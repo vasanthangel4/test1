@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang=en-US>
+<head>
+<meta http-equiv=content-type content="text/html; charset=UTF-8"/>
+<meta charset=UTF-8 />
+<title>CEM Business Banner</title>
+<link href="index_data/css.css" rel=stylesheet type="text/css"/>
+<link rel=stylesheet href="index_data/reset.css"/>
+<link rel=stylesheet href="index_data/ccslider.css"/>
+<link rel=stylesheet href="index_data/style.css"/>
+<style type="text/css">#slider{width:980px;height:309px;}
+#slider .control-links{bottom:0;color:#000;}
+#demo-description{width:980px;margin:60px auto;color:#fff;font:20px 'PT Sans' , 'Helvetica Neue' , Helvetica, Arial, sans-serif;text-shadow:0 1px 1px rgba(0, 0, 0, 0.5);}
+a.slider_link{color:#000;text-decoration:none;font-family:Arial;font-size:14px;}</style>
+<script src="../Scripts/jquery.js"></script>
+</head>
+<body>
+<div style="background: none repeat scroll 0% 0% transparent;" class=ccslider id=slider>
+<div style="display: none;" class=slider-innerWrapper>
+<div><img src="index_data/deploy.jpg" alt="" data-transition="{&quot;effect&quot;: &quot;cubeLeft&quot;, &quot;slices&quot;: 5, &quot;delay&quot;: 200, &quot;delayDir&quot;: &quot;toCentre&quot;}">
+</div>
+<img src="index_data/erp.jpg" id=myimg alt="<a href='../AX/ax_services.aspx' style='width:900px; display:inline-block;' class='slider_link' target='_parent'>Click to Upgrade to AX2012</a>" data-transition="{&quot;effect&quot;: &quot;cubeRight&quot;, &quot;slices&quot;: 5, &quot;delay&quot;: 200}"/>
+<img src="index_data/staffing.jpg" alt="" data-transition="{&quot;effect&quot;: &quot;cubeDown&quot;, &quot;slices&quot;: 15, &quot;animSpeed&quot;: 3000, &quot;delay&quot;: 30, &quot;easing&quot;: &quot;easeInOutElastic&quot;, &quot;depthOffset&quot;: 200, &quot;sliceGap&quot;: 20}">
+<img src="index_data/outsourcing.jpg" alt="" data-transition="{&quot;effect&quot;: &quot;cubeUp&quot;, &quot;slices&quot;: 5, &quot;animSpeed&quot;: 1300, &quot;delay&quot;: 100, &quot;easing&quot;: &quot;easeInOutCubic&quot;, &quot;depthOffset&quot;: 500, &quot;sliceGap&quot;: 50}">
+</div>
+<div style="width: 980px; height: 309px; left: 50px; top: 50px;" class=slider-controls>
+<a class="slider-nav prev"></a><a class="slider-nav next"></a>
+</div>
+<div class="slider-timer pause">
+</div>
+<div style="width: 880px; left: 50px; bottom: 50px; right: auto; display: none;" class=slider-caption>
+Images can also serve as links. To see this in effect click on this slide image</div>
+<div style="width: 980px; height: 309px; left: 50%; top: 50%; margin-left: -450px;
+            margin-top: -175px; display: none;" class=cc-htmlwrapper>
+</div>
+<a style="width: 980px; height: 309px; left: 50%; top: 50%; margin-left: -450px;
+            margin-top: -175px; display: none;" class=slider-link href="http://google.com/">
+</a>
+</div>
+<div id=caption class=cc-caption>
+This is an example of a caption</div>
+<script src="index_data/jquery_003.js"></script>
+<script src="index_data/jquery.js"></script>
+<script src="index_data/jquery_002.js"></script>
+<script src="index_data/jquery_004.js"></script>
+<script>$(function(){$('#demo-nav').find('a').tooltip({effect:'slide'});});$(window).load(function(){$('#slider').ccslider({_3dOptions:{imageWidth:980,imageHeight:309}});});</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+﻿#easyTooltip_facebook, #easyTooltip_twitter, #easyTooltip_google, #easyTooltip_flickr, #easyTooltip_slideshare
+{
+    padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+    background: #262626;
+    color: #fff;
+    font-size: 11px;
+    min-width: 70px;
+    height: 30px;
+    font-weight: normal;
+    margin: -10px 0 0 0;
+    opacity: 0.90;
+    display: block;
+    position: absolute;
+}
+#easyTooltip
+{
+    padding: 0px 5px 5px 5px; /*border: 1px solid #e1e1e1;*/
+    background: #262626;
+    color: #fff;
+    font-size: 11px;
+    min-width: 70px;
+    height: 30px;
+    font-weight: normal;
+    margin: -10px 0 0 0;
+    opacity: 0.90;
+    display: block;
+    position: absolute;
+}

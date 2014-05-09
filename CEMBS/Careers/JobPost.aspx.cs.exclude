@@ -1,0 +1,93 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Careers_JobPost : System.Web.UI.Page
+{
+    helperDataClassesDataContext db = new helperDataClassesDataContext();
+    protected void Page_Load(object sender , EventArgs e)
+    {
+        if (Session["Jobuser"] == null)
+        {
+            Response.Redirect("AdminPosting.aspx");
+        }
+    }
+    protected void post_btn_Click(object sender , EventArgs e)
+    {
+        string jobcategory;
+        JobOpening Jobs = new JobOpening();
+        JobCategory categories = new JobCategory();
+
+        jobcategory = newcategory.Text.ToLower();
+
+        Jobs.Category = jobcategory.ToLower();
+        Jobs.JobTitle = jobtitle.Text;
+        Jobs.Skills = skills.Text;
+        Jobs.Location = location.Text;
+        Jobs.MinimumExperience = Convert.ToInt32(minexp.Text);
+        Jobs.MaximumExperience = Convert.ToInt32(maxexp.Text);
+        Jobs.CareerLevel = maxexp.Text;
+        Jobs.PostedDate = Convert.ToDateTime(System.DateTime.Now.ToShortDateString());
+        Jobs.JD = description.Text;
+        if (IsExistingCategory(jobcategory) != true)
+        {
+            categories.JobCategory1 = jobcategory;
+            db.JobCategories.InsertOnSubmit(categories);
+        }
+        db.JobOpenings.InsertOnSubmit(Jobs);
+        db.SubmitChanges();
+        response.Text = "<span style='color:green'>New JobOpening posted successfully</style>";
+        ResetValues();
+    }
+    protected bool IsExistingCategory(string category)
+    {
+        int query = (from data in db.JobCategories where data.JobCategory1.ToLower().Equals(category) select data).Count();
+        if (query >= 1)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+    protected void changeIndex(object sender , EventArgs e)
+    {
+        if (CategoryDropDownList.SelectedItem.Text != "Relevance by Categories")
+        {
+            newcategory.Text = CategoryDropDownList.SelectedItem.Text;
+        }
+    }
+    protected void ResetValues()
+    {
+        //CategoryDropDownList.SelectedValue = CategoryDropDownList.Items[0].Text;
+        newcategory.Text = string.Empty;
+        jobtitle.Text = string.Empty;
+        skills.Text = string.Empty;
+        location.Text = string.Empty;
+        minexp.Text = string.Empty;
+        maxexp.Text = string.Empty;
+        description.Text = string.Empty; ;
+    }
+    protected void GridView1_RowDataBound(object sender, GridViewRowEventArgs e)
+    {
+        if (e.Row.RowType == DataControlRowType.DataRow)
+        {
+            foreach(DataControlFieldCell cell in e.Row.Cells)
+            {
+                foreach(Control control in  cell.Controls)
+                {
+                    Button button = control as Button;
+                    if (button != null && button.CommandName == "Delete")
+                    {
+                        button.OnClientClick = "if (!confirm('Are you sure " +
+                           "you want to delete this record?')) return;";
+                    }
+                }
+            }
+        }
+    }
+}

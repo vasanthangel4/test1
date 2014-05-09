@@ -1,0 +1,128 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+using System.Configuration;
+using System.IO;
+using System.Net;
+using System.Net.Mail;
+
+public partial class Download_RequestForm : System.Web.UI.Page
+{
+    //SqlConnection sqlcon;
+    //SqlCommand cmd;
+    string name;
+    string designation;
+    string company;
+    string contact;
+    string email;
+    string from;
+    string to;
+    string cc;
+    string message;
+    string formname;
+    string website;
+    DateTime requestdate;
+
+    webclass myclass = new webclass();
+
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        name = NameTextBox.Text;
+        company = CompanyTextBox.Text;
+        email = MailTextBox.Text;
+        from = "request@cembs.com";
+        cc = "naresh@cembs.com";
+        to = "naresh@cembs.com";
+        website = string.Empty;
+        requestdate = System.DateTime.Now;
+        formname = "downloads/videos";
+
+        if (Session["visitor"] != null)
+        {
+            Server.Transfer("Case-Studies_downloads.aspx");
+        }
+
+    }
+    protected void submit_Click(object sender, EventArgs e)
+    {
+        //string con_string = ConfigurationManager.ConnectionStrings["cembs_connectionstring"].ConnectionString;
+        //sqlcon = new SqlConnection(con_string);
+        //sqlcon.Open();
+
+        contact = ContactTextBox.Text;
+        if (IsPostBack)
+        {
+            try
+            {
+                if (sendmail() == true)
+                {
+                    resultLabel.Text = "Quote has been successfully sent.<br/>Thankyou for showing interest.";
+                    QuoteInsertClass myquote = new QuoteInsertClass();
+                    myquote = myclass.insert_quote(name, designation, company, contact, website, email, "", requestdate, formname);
+                    Session["visitor"] = NameTextBox.Text;
+                    Server.Transfer("Case-Studies_downloads.aspx");
+                }
+                else
+                {
+                    resultLabel.Text = "Mail was not successful";
+                }
+            }
+            catch (Exception ex)
+            {
+                resultLabel.Text = ex.ToString();
+            }
+        }
+    }
+
+    #region email
+
+    protected bool sendmail()
+    {
+        //creating object of mailclass from mailclass.cs
+        MailClass mymail = new MailClass();
+        string Automessage = "Thank you for your request " + name + ". We will get back to you shortly";
+        //string image = "Images/cem_logo.jpg";
+        try
+        {
+            if (formname == null || formname == string.Empty)
+            {
+                formname = "contact";
+                //mail_quote_wpc(name , from , to , cc , designation , company , contact , email , message , website);
+                mymail = myclass.mail_quote(name, to, designation, company, contact, website, email, message, requestdate, formname);
+                webclass.AutoMessage_customer(MailTextBox.Text, name, "CEM Business Solutions", Automessage);
+                return true;
+            }
+            else
+            {
+                mymail = myclass.mail_quote(name, to, designation, company, contact, website, email, message, requestdate, formname);
+                webclass.AutoMessage_customer(MailTextBox.Text, name, "CEM Business Solutions", Automessage);
+                return true;
+            }
+
+        }
+        catch (Exception ex)
+        {
+            resultLabel.Text = ex.ToString();
+            return false;
+        }
+    }
+
+    #endregion
+
+    protected void resetvalues()
+    {
+        NameTextBox.Text = "";
+        CompanyTextBox.Text = "";
+        ContactTextBox.Text = "";
+        MailTextBox.Text = "";
+    }
+    protected void reset_Click(object sender, EventArgs e)
+    {
+        resetvalues();
+    }
+}

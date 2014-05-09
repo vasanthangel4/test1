@@ -1,0 +1,127 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Careers_ApplyOnline : System.Web.UI.Page
+{
+    webclass helper = new webclass();
+    helperDataClassesDataContext db = new helperDataClassesDataContext();
+    string saved_path;
+    string profile_path = HttpContext.Current.Request.PhysicalApplicationPath + "Careers/Profiles/";
+    string name;
+    string mail;
+    string contact;
+    string profileurl;
+    string message;
+    string to;
+    string cc;
+    protected void Page_Load(object sender , EventArgs e)
+    {
+        name = NameTextBox.Text;
+        mail = MailTextBox.Text;
+        contact = PhoneTextBox.Text;
+        message = MessageTextBox.Text;
+    }
+    protected string upload()
+    {
+        if (Profile_Uploader.PostedFile.ContentLength <= 1004800)
+        {
+            //will keep the filename of the image.
+            ViewState["path"] = Profile_Uploader.FileName;
+
+            //will save the selected document into “Profiles” folder.
+            Profile_Uploader.PostedFile.SaveAs(profile_path + ViewState["path"]);
+
+            saved_path = "Careers/Profiles/" + ViewState["path"].ToString();
+            return saved_path;
+        }
+        else
+        {
+            return saved_path = "invalid";
+        }
+    }
+    protected void Upload_Click(object sender , EventArgs e)
+    {
+        if (sendmail() == true)
+        {
+            InsertProfile();
+            ResultLabel.ForeColor = System.Drawing.Color.Green;
+            ResultLabel.Text = "Job Application sent Successfully.";
+        }
+        else
+        {
+            if (ResultLabel.Text == "")
+            {
+                ResultLabel.ForeColor = System.Drawing.Color.Red;
+                ResultLabel.Text = "Sorry you have already applied";
+            }
+            else
+            {
+                ResultLabel.ForeColor = System.Drawing.Color.Red;
+                ResultLabel.Text = "Job Application not sent.";
+            }
+        }
+    }
+    protected void InsertProfile()
+    {
+        profileurl = upload().ToString();
+        if (profileurl != "invalid")
+        {
+            var insert = db.proc_insert_profiles(name , mail , contact , profileurl , message);
+            db.SubmitChanges();
+        }
+        else
+        {
+            ResultLabel.ForeColor = System.Drawing.Color.Red;
+            ResultLabel.Text = "Sorry File type Invalid";
+        }
+    }
+    protected bool sendmail()
+    {
+        to = "request@cembs.com";
+        cc = "request@cembs.com";
+        profileurl = upload().ToString();
+        if (CheckCandidateMail() == false)
+        {
+            if (profileurl != "invalid")
+            {
+                try
+                {
+                    helper.applyonline(to , cc , name , mail , contact , profileurl , message);
+                    helper.AutoMessage_resumes(mail , name);
+                    return true;
+                }
+                catch (Exception ex)
+                {
+                    Response.Write(ex.ToString());
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        else
+        {
+            ResultLabel.ForeColor = System.Drawing.Color.Red;
+            ResultLabel.Text = "Sorry you have already applied";
+            return false;
+        }
+    }
+    protected bool CheckCandidateMail()
+    {
+        int getmails = (from data in db.Profiles where data.Email.Equals(mail) select new { data.Email }).Count();
+        if (getmails != 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}

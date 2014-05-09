@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="InbuiltService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://www.cembs.com/InbuiltService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://www.cembs.com/InbuiltService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IInbuiltService_InsertEventRegistrations_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertEventRegistrations" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_EventRegMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:EventRegMail" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_CloudMail_InputMessage">
+    <wsdl:part name="parameters" element="tns:CloudMail" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_mailquotenew_InputMessage">
+    <wsdl:part name="parameters" element="tns:mailquotenew" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_Automessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:Automessage" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_InsertQuote_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertQuote" />
+  </wsdl:message>
+  <wsdl:message name="IInbuiltService_maildownloads_InputMessage">
+    <wsdl:part name="parameters" element="tns:maildownloads" />
+  </wsdl:message>
+  <wsdl:portType name="IInbuiltService">
+    <wsdl:operation name="InsertEventRegistrations">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/InsertEventRegistrations" message="tns:IInbuiltService_InsertEventRegistrations_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EventRegMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/EventRegMail" message="tns:IInbuiltService_EventRegMail_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CloudMail">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/CloudMail" message="tns:IInbuiltService_CloudMail_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="mailquotenew">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/mailquotenew" message="tns:IInbuiltService_mailquotenew_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Automessage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/Automessage" message="tns:IInbuiltService_Automessage_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertQuote">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/InsertQuote" message="tns:IInbuiltService_InsertQuote_InputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="maildownloads">
+      <wsdl:input wsaw:Action="http://tempuri.org/IInbuiltService/maildownloads" message="tns:IInbuiltService_maildownloads_InputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IInbuiltService" type="tns:IInbuiltService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="InsertEventRegistrations">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/InsertEventRegistrations" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="EventRegMail">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/EventRegMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CloudMail">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/CloudMail" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="mailquotenew">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/mailquotenew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="Automessage">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/Automessage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="InsertQuote">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/InsertQuote" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="maildownloads">
+      <soap:operation soapAction="http://tempuri.org/IInbuiltService/maildownloads" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="InbuiltService">
+    <wsdl:port name="BasicHttpBinding_IInbuiltService" binding="tns:BasicHttpBinding_IInbuiltService">
+      <soap:address location="http://www.cembs.com/InbuiltService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

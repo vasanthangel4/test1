@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6efda785-75f3-4c20-8577-e55df1872aea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.furthermoresolutions.com/CEMService/cemservice.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="cemservice.disco" MetadataType="Disco" ID="5f9ce279-b39f-4ad1-b958-74b5f61b3541" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?disco" />
+    <MetadataFile FileName="cemservice.wsdl" MetadataType="Wsdl" ID="2b6c5b53-5fb5-4ac6-8db0-8032276f08bc" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?wsdl" />
+    <MetadataFile FileName="cemservice2.xsd" MetadataType="Schema" ID="2d58a1b0-9910-4173-8997-66ac86e75633" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?xsd=xsd0" />
+    <MetadataFile FileName="cemservice3.xsd" MetadataType="Schema" ID="325c6852-8b24-4239-88a6-4548eed7772a" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?xsd=xsd1" />
+    <MetadataFile FileName="cemservice.xsd" MetadataType="Schema" ID="539ac0f1-0a76-44cb-b606-d96eb70cc954" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?xsd=xsd2" />
+    <MetadataFile FileName="cemservice1.xsd" MetadataType="Schema" ID="045e1e7b-2e01-4e64-aa78-56b4db458a6d" SourceId="1" SourceUrl="http://www.furthermoresolutions.com/CEMService/cemservice.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

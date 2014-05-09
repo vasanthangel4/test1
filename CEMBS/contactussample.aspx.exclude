@@ -1,0 +1,334 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="contactussample.aspx.cs" Inherits="contactussample" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ Register TagName="location_contact" TagPrefix="location" Src="location_tabs.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title><script type="text/javascript" src="Scripts/uiTabsFirstItem.js"></script>
+    <script type="text/javascript" src="Scripts/OtherPages/ContactusTextFocus.js">    </script>
+    <!-- tool tip -->
+    <link href="Styles/dcmegamenu.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/cem_styles.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/MetroStyle.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/Layout.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/bg_change.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/jquery.min.js" type="text/javascript"></script>
+    
+    
+    
+    <link href="Styles/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="autocomplete_src/jquery-1.7.1.js" type="text/javascript"></script>
+    <script src="autocomplete_src/jquery.ui.widget.js" type="text/javascript"></script>
+    <script src="autocomplete_src/jquery.ui.autocomplete.js" type="text/javascript"></script>
+    <script src="autocomplete_src/jquery.ui.core.js" type="text/javascript"></script>
+    <script src="autocomplete_src/jquery.ui.position.js" type="text/javascript"></script>
+    <link href="autocomplete_src/demos.css" rel="stylesheet" type="text/css" />
+    <link href="autocomplete_src/jquery.ui.autocomplete.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/jquery.ui.accordion.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OthersPages/SearchControlAutocomplete.css" rel="stylesheet" type="text/css" />
+    <script src="Scripts/OtherPages/SearchControlAjax.js" type="text/javascript"></script>
+    <link href="Styles/OthersPages/SlidingDiv.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="Scripts/sliding_social.js"></script>
+    <!-- end sliding div -->
+    <script src="Scripts/easyTooltip.js" type="text/javascript"></script>
+    <%--<script type="text/javascript" src="Scripts/OtherPages/footer.js"></script>--%>
+    <script type="text/javascript">
+        $(document).ready(function () { $("a#facebook").easyTooltip({ tooltipId: "easyTooltip_facebook", content: '<b>Facebook</b>' }); $("a#twitter").easyTooltip({ tooltipId: "easyTooltip_twitter", content: '<b>Twitter</b>' }); $("a#flickr").easyTooltip({ tooltipId: "easyTooltip_flickr", content: '<b>Flickr</b>' }); $("a#google").easyTooltip({ tooltipId: "easyTooltip_google", content: '<b>GooglePlus</b>' }); $("a#slideshare").easyTooltip({ tooltipId: "easyTooltip_slideshare", content: '<b>Slideshare<b>' }); });
+    </script>
+    <link href="Styles/OthersPages/QuicklinksEasytooltip.css" rel="stylesheet" type="text/css" />
+    <!-- end quick links -->
+    <!-- sitemap -->
+    <style type="text/css">
+        .sitemapdiv
+        {
+            height: 22px;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            width: 100%;
+            font-size: 11px;
+        }
+        .sitemap
+        {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 5px 0 0 10px;
+            float: left;
+        }
+        .sitemap a
+        {
+            text-decoration: underline;
+        }
+        li .sitemap a
+        {
+            background: none;
+            color: #584C47;
+            display: block;
+            padding: 0 7px;
+            text-decoration: underline;
+            text-shadow: 1px 0 1px #FFFFFF;
+        }
+        .sitemap a:hover
+        {
+            text-decoration: underline;
+        }
+    </style>
+    <!-- end sitemap -->
+<script src="autocomplete_src/jquery.ui.autocomplete.js" type="text/javascript"></script>
+<script src="autocomplete_src/jquery.ui.core.js" type="text/javascript"></script>
+<script src="autocomplete_src/jquery.ui.position.js" type="text/javascript"></script>
+<link href="autocomplete_src/demos.css" rel="stylesheet" type="text/css" />
+<link href="autocomplete_src/jquery.ui.autocomplete.css" rel="stylesheet" type="text/css" />
+<%--<script src="Scripts/OtherPages/SearchControlAjax.js" type="text/javascript"></script>--%>
+    <script type="text/javascript">
+        $(document).ready(function () { $.ajax({ url: "Services/WebService.svc/keywords", type: "GET", contentType: "application/json;charset=utf-8", data: { prefix: $('#extendedmenu_search_search_txt').val() }, dataType: "json", success: function (data) { var users = new Array(); users = data.d; $(function () { var availableTags = []; $("#extendedmenu_search_search_txt").autocomplete({ source: users }); }); }, error: function (error) { alert("Slow connection or No connectivity"); } }); });
+    </script>
+<%--<script src="Scripts/OtherPages/SearchControl.js" type="text/javascript"></script>--%>
+    <script type="text/javascript">
+        function setBlurFocus() { var user_input = document.getElementById('search_txt'); user_input.onblur = setFocus(); user_input.onfocus = setBlur(); } function setFocus() { document.getElementById('search_txt').value = 'Search your text here....'; } function setBlur() { document.getElementById('search_txt').value = ''; } $(document).ready(function () { $("[id$='search_txt']").focus(function () { $("[id$='search_txt']").animate({ width: '293px', overflow: 'visible' }, 400); }); $("[id$='search_txt']").blur(function () { $("[id$='search_txt']").animate({ width: '140px' }, 300); }); });
+    </script>
+
+
+
+    <script type="text/javascript" src="Scripts/OtherPages/ContactusEasyToopTip.js"></script>
+    <script src="Scripts/easyTooltip.js" type="text/javascript"></script>
+    <link href="Styles/OthersPages/EasyToolTip.css" rel="stylesheet" type="text/css" />
+    <!-- end tooltip -->
+    <!-- request form -->
+    <link href="Styles/OthersPages/RequestFormTdStyles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 118px;
+        }
+        .style2
+        {
+            width: 261px;
+        }        
+    </style>
+    <!-- end request form -->
+    <script type="text/javascript">
+
+
+        $(document).ready(function () {
+            //Default Action
+            $(".h_tab_content").hide(); //Hide all content
+            $("ul.h_tabs li:#t1").addClass("active").show(); //Activate first tab
+            $(".h_tab_content:#t1").show(); //Show first tab content
+
+            //On Click Event
+            $("ul.h_tabs li").click(function () {
+                $("ul.h_tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".h_tab_content").hide(); //Hide all tab content
+                var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active content
+                return false;
+            });
+        });
+    </script>
+    
+    <!-- using service for checking mail ids -->
+    <script type="text/javascript" src="Scripts/OtherPages/ContactusRestrictEmail.js"></script>
+    <!-- end mail ids -->
+    <link href="Styles/contact.css" rel="stylesheet" type="text/css" />
+    <!-- location tabs -->
+    <link href="Styles/tabmenu_horizontal.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OthersPages/locationtabs.css" rel="stylesheet" type="text/css" />
+    <!-- end location tabs -->
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <div class="container">
+            <ul class="tabs">
+                <%--</div>--%>
+                <li><a href="#tab1">Global Locations</a></li>
+                <li><a href="#tab2">Request a free quote</a></li>
+            </ul>
+            <div class="tab_container">
+                <div id="tab1" class="tab_content">
+                    <div class="map">
+                        <div class="map_image">
+                            <div class="india">
+                                <div style="position: absolute">
+                                    <a title="" href="#" id="india">
+                                        <asp:Image ID="Image2" runat="server" CssClass="noborder" ImageUrl="Images/india.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uae">
+                                <div style="position: absolute">
+                                    <a title="" href="#" id="uae">
+                                        <asp:Image ID="Image4" runat="server" CssClass="noborder" ImageUrl="Images/uae.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="us">
+                                <div style="position: absolute">
+                                    <a title="" href="#" id="us">
+                                        <asp:Image ID="Image3" runat="server" CssClass="noborder" ImageUrl="Images/usa.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="singapore">
+                                <div style="position: absolute">
+                                    <a title="" href="#" id="singapore">
+                                        <asp:Image ID="Image1" runat="server" CssClass="noborder" ImageUrl="Images/illinois.png" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="uk">
+                                <div style="position: absolute">
+                                    <a title="" href="#" id="uk">
+                                        <asp:Image ID="Image5" runat="server" CssClass="noborder" ImageUrl="Images/uk.png" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <%--<img src="Images/contact_map.jpg" class="map" alt="Contact us map" />--%>
+                    <location:location_contact ID="locations" runat="server" />
+                </div>
+                <div id="tab2" class="tab_content">
+                    <div style="margin: 0 auto;">
+                        <br />
+                        <table width="700" class="request_form" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td colspan="3">
+                                    <h1>
+                                        Submit your enquiries</h1>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Name*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="NameTextBox" runat="server" CausesValidation="True" Width="200px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="NameValidator" runat="server" Display="Dynamic" ErrorMessage="Name Required"
+                                        ControlToValidate="NameTextBox" SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Designation*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="DesignationTextBox" runat="server" CausesValidation="True" Width="200px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="DesignationValidator" runat="server" Display="Dynamic"
+                                        ErrorMessage="Enter your designation" ControlToValidate="DesignationTextBox"
+                                        SetFocusOnError="True" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Company*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="CompanyTextBox" runat="server" CausesValidation="True" Width="200px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="CompanyValidator" runat="server" Display="Dynamic"
+                                        ErrorMessage="Company name required" SetFocusOnError="True" ControlToValidate="CompanyTextBox"
+                                        ForeColor="Red"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Contact number*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="ContactTextBox" runat="server" CausesValidation="True" Width="200px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="ContactValidator" runat="server" Display="Dynamic"
+                                        ErrorMessage="Contact number required" SetFocusOnError="True" ControlToValidate="ContactTextBox"
+                                        ForeColor="Red"></asp:RequiredFieldValidator>
+                                    &nbsp;<asp:RegularExpressionValidator ID="ContactIntegerValidator" runat="server"
+                                        ControlToValidate="ContactTextBox" Display="Dynamic" ErrorMessage="Enter valid phone number"
+                                        SetFocusOnError="True" ValidationExpression="\d{9,20}" ForeColor="Red"></asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Email address*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="MailTextBox" runat="server" class="mailtext" CausesValidation="True"
+                                        Width="200px"></asp:TextBox><br />
+                                    <div style="color: #ff0000; display: none;" id="maildiv">
+                                        Only official mailid</div>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="MailValidator" runat="server" Display="Dynamic" ErrorMessage="Enter your mail ID"
+                                        SetFocusOnError="True" ControlToValidate="MailTextBox" ForeColor="Red"></asp:RequiredFieldValidator>
+                                    &nbsp;<asp:RegularExpressionValidator ID="MailExpressionValidator" runat="server"
+                                        ControlToValidate="MailTextBox" Display="Dynamic" ErrorMessage="Enter a valid mail ID"
+                                        SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                        ForeColor="Red"></asp:RegularExpressionValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    Website
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="WebsiteTextBox" runat="server" Width="200px"></asp:TextBox>
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="top" class="style1">
+                                    Message*
+                                </td>
+                                <td class="style2">
+                                    <asp:TextBox ID="MessageTextBox" runat="server" CausesValidation="True" Width="250px"
+                                        Rows="7" TextMode="MultiLine"></asp:TextBox>
+                                </td>
+                                <td>
+                                    <asp:RequiredFieldValidator ID="MessageValidator" runat="server" Display="Dynamic"
+                                        ErrorMessage="Type your message" SetFocusOnError="True" ControlToValidate="MessageTextBox"
+                                        ForeColor="Red"></asp:RequiredFieldValidator>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                </td>
+                                <td class="style2">
+                                    <asp:Button ID="submit" runat="server" Text="Submit"/>&nbsp;
+                                    <asp:Button ID="reset" runat="server" Text="Reset" CausesValidation="False" />
+                                </td>
+                                <td>
+                                    &nbsp;<asp:Label ID="resultLabel" runat="server" ForeColor="#729106"></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="style1">
+                                    &nbsp;
+                                </td>
+                                <td class="style2">
+                                    &nbsp; Kindly fill all the information.
+                                </td>
+                                <td>
+                                    &nbsp;
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slideshow -->
+    <!-- attach the plug-in to the slider parent element and adjust the settings as required -->
+    </form>
+</body>
+</html>

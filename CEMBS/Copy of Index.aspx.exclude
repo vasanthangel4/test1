@@ -1,0 +1,9 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Layout.master" AutoEventWireup="true"
+    CodeFile="Copy of Index.aspx.cs" Inherits="Index" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
+    
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="layout_content" runat="Server">
+    
+</asp:Content>

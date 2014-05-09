@@ -1,0 +1,12 @@
+﻿ul.photos li
+{
+    border: 1px solid #DDDDDD;
+    float: left;
+    height: 135px;
+    list-style: none outside none;
+    margin: 0 7px;
+    padding: 10px 0;
+    text-align: center;
+    width: 260px;
+    margin-bottom: 15px;
+}

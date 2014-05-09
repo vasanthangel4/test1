@@ -1,0 +1,50 @@
+﻿.map .map_image
+{
+	background:url(../Images/contact_map.jpg) center center no-repeat;
+	width:520px;
+	height: 320px;
+	padding-left:25px;
+	position:relative;
+	background-position:18px 41px;
+}
+.map .map_image .india, .us, .uae, .uk
+{
+	position:absolute;
+}
+.map .map_image .india
+{
+	/*background:url(../Images/contact/india.png) no-repeat;*/
+	height: 33px;
+    left: 354px;
+    top: 160px;
+    width: 30px;
+}
+.map .map_image .singapore
+{
+	height: 18px;
+    left: 393px;
+    position: absolute;
+    top: 190px;
+    width: 16px;
+}
+.map .map_image .us
+{
+	height: 51px;
+    left: 65px;
+    top: 117px;
+    width: 94px;
+}
+.map .map_image .uae
+{
+	height: 31px;
+    left: 301px;
+    top: 156px;
+    width: 38px;
+}
+.map .map_image .uk
+{
+	height: 33px;
+    left: 239px;
+    top: 104px;
+    width: 30px;
+}

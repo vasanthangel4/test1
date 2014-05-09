@@ -1,0 +1,14 @@
+﻿document.write("<h1>Transportation<\/h2>");
+document.write("<p>Transport business is the most  dynamic and fast-growing sector, considered to be the heart of manufacturing  and distribution companies. Managing supply chain becomes quite complex when it  comes to increasing economic crisis, hike in fuel prices, multiple  transportation modes, multi-national regulatory compliances, value added taxes,  etc. Along with these factors, the company needs to provide in-time delivery,  proper tracking system, user-friendly customer service and 24\/7 availability to  sustain the market competition. Hence, access to real-time information,  effective planning and quality in delivery of the service are eventually  important to overcome such complexities. Optimal utilization of right  information will help you to track all your requirement and deliverables leading  you to effective plan, analyze and control your complete business process.<br \/>");
+document.write("  CEM’s transportation solutions improve  your data access and reporting strength and provide perfect visibility into  your business process. Fully integrated with Microsoft Dynamics Technology, our  solution is scalable, flexible and easily configurable to meet the unique needs  of your organization and provides complete control over the operation for  better cost management and returns. It is ideal for transporters, logistics  providers, truck loaders, freight forwarders, multinational and multi-model  freight forwarders, and for providers managing warehouse and logistics services.  Our rich experience in implementation of transportation solution has led  provided <\/p>");
+document.write("<ul class=\"ul_reasons\">");
+document.write("  <li>Visibility across the       enterprise<\/li>");
+document.write("  <li>Efficient workflow<\/li>");
+document.write("  <li>Speed up your communication and       serve your customer better by connecting your business systems and       information flows across your entire organization <\/li>");
+document.write("  <li>More accurate and faster       transactions<\/li>");
+document.write("  <li>Automation to connect various       functional process and data related to that by eliminating paper based       process<\/li>");
+document.write("  <li>Increase reliability and low       down the cost and complexities of integration.<\/li>");
+document.write("  <li>Enable IT teams to be more       productive with less involvement of the consultants. <\/li>");
+document.write("  <li>Improved customer service<\/li>");
+document.write("  <li>Optimized transport costs and       operations<\/li>");
+document.write("<\/ul>");

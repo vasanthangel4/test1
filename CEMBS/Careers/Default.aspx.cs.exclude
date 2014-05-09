@@ -1,0 +1,24 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Careers_Default : System.Web.UI.Page
+{
+    helperDataClassesDataContext db = new helperDataClassesDataContext();
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        var d = from data in db.tbl_quotes select new { name = data.Customername, email = data.Email, company = data.Company, contact = data.Contact };
+        GridView1.DataSource = d;
+        GridView1.DataBind();
+        GridView1.UseAccessibleHeader = true;
+        GridView1.HeaderRow.TableSection = TableRowSection.TableHeader;
+        TableCellCollection cells = GridView1.HeaderRow.Cells;
+        cells[0].Attributes.Add("data-class", "expand");
+        cells[1].Attributes.Add("data-hide", "phone,tablet");
+        cells[2].Attributes.Add("data-hide", "phone,tablet");
+        cells[3].Attributes.Add("data-hide", "phone");  
+    }
+}

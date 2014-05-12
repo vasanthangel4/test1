@@ -2,6 +2,9 @@
     AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="AXPayroll_Support_Index" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+
+       
+
     <style type="text/css">
         .div_content
         {

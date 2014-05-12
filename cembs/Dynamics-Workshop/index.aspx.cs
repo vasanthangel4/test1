@@ -17,7 +17,7 @@ public partial class Dynamics_Workshop_index : System.Web.UI.Page
     DateTime requestdate;
     string contact;
 
-    webclass myclass = new webclass();
+     webclass myclass = new webclass();
     //CEMServiceReference.IcemserviceClient client = new IcemserviceClient();
     CRMServiceReference.Service1Client client = new Service1Client();
     InbuiltServiceClient client1 = new InbuiltServiceClient();

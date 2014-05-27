@@ -59,7 +59,7 @@ public class AjaxService
     [OperationContract]
     public string AjaxMail_Contact(Person person)
     {
-        string Automessage = "Dear " + person.name + ".<br/>Thanks a bunch for proving your interest with CEM! We appreciate your association – our representative will touch base with you immediately. Do not hesitate to mail or call us at any time should you have any question.<br/><br/>Best regards<br/>Arokia Bakkianathan L<br/>Manager – Social Media<br/>CEM Business Solutions<br/>Email: arokia@cembs.com";
+        string Automessage = "Dear " + person.name + ".<br/><br/>Thank you for your interest in CEM! We appreciate your time. We will get back to you shortly.<br/> <br/>CEM Business Solutions<br/>";
         string to, cc;
         to = "arokia@cembs.com";
         cc = "info@cembs.com;srinivasan.b@cembs.com";

@@ -3,7 +3,7 @@
 
 <%@ Register TagName="usercontrol_quicklinks" TagPrefix="quicklinks" Src="~/UserControls/quicklinks.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-    <title>Microsoft dynamics industry solutions | Microsoft Dynamics ERP for Industries
+    <title>CEMBS | Microsoft dynamics industry solutions
     </title>
     <meta name="description" content="Solution providers build on the standard Microsoft Dynamics ERP and CRM functionality to deliver powerful industry solutions that meet industry-specific needs. " />
     <meta name="keywords" content="erp for manufacturing" />

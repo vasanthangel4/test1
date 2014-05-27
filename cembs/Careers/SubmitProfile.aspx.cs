@@ -115,7 +115,7 @@ public partial class Careers_SubmitProfile : System.Web.UI.Page
         string title = SelectJobs().titlefield;
         if (jobid != null && category != null && title != null)
         {
-            message = "Candidate Name: " + name + "<br/>" +
+            message =   "Candidate Name: " + name + "<br/>" +
                         "Current Location: " + location + "<br/>" +
                         "Years of Experience: " + experience + "<br/>" +
                         "Candidate MailID: " + mail + "<br/>" +
@@ -128,7 +128,7 @@ public partial class Careers_SubmitProfile : System.Web.UI.Page
         }
         else
         {
-            message = "Candidate Name: " + name + "<br/>" +
+            message =   "Candidate Name: " + name + "<br/>" +
                         "Current Location: " + location + "<br/>" +
                         "Years of Experience: " + experience + "<br/>" +
                         "Candidate MailID: " + mail + "<br/>" +

@@ -602,7 +602,7 @@ public class webclass
         msg.From = new MailAddress("careers@cembs.com");
         msg.To.Add(new MailAddress(to));
         msg.Subject = "Auto-reply from CEM Business Solutions";
-        msg.Body = "Thank you for Applying " + jobseeker_name + ". Our HumanResource Team will get in touch with soon";
+        msg.Body = "Thank you for applying " + jobseeker_name + ". Our HR team will get in touch with you soon.<br/><br/>  CEM Business Solutions<br/>";
 
         client.Send(msg);
     }

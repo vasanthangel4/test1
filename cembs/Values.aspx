@@ -12,8 +12,7 @@
 <%@ Register TagName="about" TagPrefix="cfmd" Src="~/AboutUserControls/cfmd.ascx" %>
 <%@ Register TagName="about" TagPrefix="globalinstallations" Src="~/AboutUserControls/globalinstallations.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-    <title>Microsoft dynamics suite | Our Offices at Chennai, INDIA, Mumbai, Dubai, UAE,
-        Sharjah, UAE, Abu Dhabi, UAE, Kuwait, USA, UK </title>
+    <title>CEMBS | INDIA, Middle East, UK, US, Singapore</title>
     <meta name="description" content=" Headquartered in Dubai, CEM Business solution is a global IT services Organization focusing on Microsoft Dynamics suite of ERP and CRM solutions. Our Offices at Chennai, INDIA, Mumbai, Dubai, UAE, Sharjah, UAE, Abu Dhabi, UAE, Kuwait, USA, UK " />
     <meta name="keywords" content="Microsoft dynamics suite, Microsoft Dynamics ERP and CRM Business software" />
     <meta name="robots" content="index, follow" />

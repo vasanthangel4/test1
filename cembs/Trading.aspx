@@ -2,7 +2,7 @@
 <%@ Register TagName="usercontrol_quicklinks" TagPrefix="quicklinks" Src="~/UserControls/quicklinks.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-<title>Trading</title>
+<title>CEMBS | Trading</title>
 <meta name="description" content="CEM offers a powerful, adaptable and fully integrated solution for trading industry that gives the companies’ the ability to manage every aspect of their business process. Based on Microsoft Dynamics technology, our solutions are designed to support the trading and distribution process adequately with all necessary functionalities that help you to meet your customer demands on time and within budget. From order entry to shipment delivery all integral parts of your business are covered with our solution providing effective business process and efficient sales. From technical and functional viewpoint, CEM’s trading solutions supports multi-market requirements and international business activities including tax and legal demands."/>
 <meta name="keywords" content="trading erp, erp for small business"/>
 <meta name="robots" content="index, follow" />

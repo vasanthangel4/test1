@@ -13,8 +13,7 @@
 <%@ Register TagName="about" TagPrefix="globalinstallations" Src="~/AboutUserControls/globalinstallations.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-    <title>Microsoft dynamics suite | Our Offices at Chennai, INDIA, Mumbai, Dubai, UAE,
-        Sharjah, UAE, Abu Dhabi, UAE, Kuwait, USA, UK </title>
+    <title>CEMBS | Global Locations </title>
     <meta name="description" content=" Headquartered in Dubai, CEM Business solution is a global IT services Organization focusing on Microsoft Dynamics suite of ERP and CRM solutions. Our Offices at Chennai, INDIA, Mumbai, Dubai, UAE, Sharjah, UAE, Abu Dhabi, UAE, Kuwait, USA, UK " />
     <meta name="keywords" content="Dynamics Ax Partner In Uae, Dynamics Gp Partner In Uae, Microsoft Cem, Microsoft Dynamics Abu Dhabi, Microsoft Partner In Uae, Microsoft Dynamics Solutions Uae, Microsoft Dynamics Solutions Sharjah, Microsoft Dynamics Solutions Dubai, Microsoft Dynamics Sharjah, Microsoft Dynamics Partners In Uae, microsoft dynamics dubai, microsoft erp partners" />
     <meta name="robots" content="index, follow" />

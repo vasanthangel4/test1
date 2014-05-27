@@ -41,7 +41,7 @@ public partial class Contactus : System.Web.UI.Page
         company = CompanyTextBox.Text;
         //contact = Convert.ToInt16(ContactTextBox.Text);
         email = MailTextBox.Text;
-        message = MessageTextBox.Text;
+        message = MessageTextBox.Text + ",Country:" + countrytextbox.Text;
         from = "request@cembs.com";
         to = "arokia@cembs.com";
         cc = "info@cembs.com;srinivasan.b@cembs.com";
@@ -74,7 +74,8 @@ public partial class Contactus : System.Web.UI.Page
             website = string.Empty;
         }
         //creating object of mailclass from mailclass.cs
-        string Automessage = "Dear " + name + ".<br/>Thanks a bunch for proving your interest with CEM! We appreciate your association – our representative will touch base with you immediately. Do not hesitate to mail or call us at any time should you have any question.<br/><br/>Best regards<br/>Arokia Bakkianathan L<br/>Manager – Social Media<br/>CEM Business Solutions<br/>Email: arokia@cembs.com";
+        string Automessage = "Dear " + name + ".<br/> <br/>Thank you for your interest in CEM! We appreciate your time. We will get back to you shortly.<br/> <br/>CEM Business Solutions<br/>";
+
         //string image = "Images/cem_logo.jpg";
         formname = "contact";
         webclass.mail_quotenew(name, to, cc, "", company, contact, website, email, message, requestdate, formname);
@@ -100,5 +101,6 @@ public partial class Contactus : System.Web.UI.Page
         ContactTextBox.Text = "";
         MailTextBox.Text = "";
         MessageTextBox.Text = "";
+        countrytextbox.Text = "";
     }
 }

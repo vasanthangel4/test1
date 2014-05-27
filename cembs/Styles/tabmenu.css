@@ -143,3 +143,17 @@ html .container  ul.tabs li.active, html ul.tabs li.active a:hover  {
 {
 	margin-top:15px !important;	
 }
+
+.location_text span a,.location_text span,.location_text p span,.location_text p span a,#t1 .location_text span a,#t1 .location_text span,#t2 .location_text span a,#t2 .location_text span,
+#t3 .location_text span a,#t3 .location_text span,#t4 .location_text span a,#t4 .location_text span,
+#t5 .location_text span a,#t5 .location_text span
+{
+    color:#000  !important;	
+    text-underline:none;
+    background-image:none !important;
+}
+
+#t1 .location_text span img,#t2 .location_text span img,#t3 .location_text span img,#t4 .location_text span img,#t5 .location_text span img
+{
+    display:none;
+}

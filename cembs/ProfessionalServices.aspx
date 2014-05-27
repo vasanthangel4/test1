@@ -2,7 +2,7 @@
 <%@ Register TagName="usercontrol_quicklinks" TagPrefix="quicklinks" Src="~/UserControls/quicklinks.ascx" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-<title>Professional Service organizations Software - Microsoft Dynamics CRM and AX</title>
+<title>CEMBS | Professional Service </title>
 <meta name="description" content="CEM’s Professional service solution which is built on top of Microsoft Dynamics Enterprise resource planning (ERP) technology helps your firms manage every aspect of your business from customer relationships to process outsourcing to meet new business demands and challenges and remain competitive. CEM’s solution is designed to drive efficiencies, streamline key business process with the ability to gain deep insight across your entire organization while improving your quality of customer interactions and decision making skills."/>
 <meta name="keywords" content="microsoft dynamic ax"/>
 <meta name="robots" content="index, follow"/>

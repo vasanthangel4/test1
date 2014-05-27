@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?><Database Name="31488_cembscom" Class="helperDataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="WebSettings" ConnectionString="Data Source=Mssql2.Myregisteredsite.com;Initial Catalog=31488_cembscom;Persist Security Info=True;User ID=31488_cem2011" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="_31488_cembscomConnectionString" Provider="System.Data.SqlClient" />
+  <Connection Mode="WebSettings" ConnectionString="Data Source=209.17.116.4;Initial Catalog=cemdb_2013;Persist Security Info=True;User ID=cemdbuser" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="_31488_cembscomConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Blog_Comments" Member="Blog_Comments">
     <Type Name="Blog_Comment">
       <Column Name="Post_ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />

@@ -35,6 +35,23 @@
         });
     });
 </script>
+<style>
+		.location_text span a,.location_text span,.location_text p span,.location_text p span a,#t1 .location_text span a,#t1 .location_text span,#t2 .location_text span a,#t2 .location_text span,
+#t3 .location_text span a,#t3 .location_text span,#t4 .location_text span a,#t4 .location_text span,
+#t5 .location_text span a,#t5 .location_text span
+{
+    color:#000  !important;	
+    text-underline:none;
+    background-image:none !important;
+}
+
+#t1 .location_text span img,#t2 .location_text span img,#t3 .location_text span img,#t4 .location_text span img,#t5 .location_text span img
+{
+    display:none !important;
+}
+
+
+</style>
 <div class="h_container">
     <ul class="h_tabs">
         <li><a href="#t4">United States</a></li>
@@ -42,6 +59,7 @@
         <li><a href="#t2">MiddleEast</a></li>
         <li><a href="#t3">United Kingdom</a></li>
         <li><a href="#t5">Singapore</a></li>
+      
     </ul>
     <div class="h_tab_container">
     <div id="t4" class="h_tab_content">
@@ -121,7 +139,7 @@
                     </a>
                 </div>
             </div>
-            <div class="location_div">
+            <%--<div class="location_div">
                 <div class="location_text">
                     <h3>
                         Mumbai</h3>
@@ -146,7 +164,7 @@
                         <img src="Images/map_mumbai.jpg" alt="CEM Business Solutions" />
                     </a>
                 </div>
-            </div>
+            </div>--%>
         </div>
         <div id="t2" class="h_tab_content">
             <div class="location_div">
@@ -214,7 +232,7 @@
                         Al Rass 24754
                         <br />
                         Kuwait.<br />
-                        Tel : +965 22610023<br />
+                        Tel : +965 22610023 | +965 55 749499 <br /> 
                         Fax : +965 22625335
                         <br />
                         Email : <a href="mailto:info@cembs.com">info@cembs.com</a>
@@ -227,6 +245,9 @@
                     </a>
                 </div>
             </div>
+
+            
+
             <div class="location_div">
                 <div class="location_text">
                     <h3>
@@ -236,9 +257,9 @@
                         UTS Carrier Building,<br />
                         Electra Street,<br />
                         Abu Dhabi, UAE.<br />
-                        Tel : 026210011
+                        Tel : +971 226210011
                         <br />
-                        Fax : 026210022
+                        Fax : +971 226210022
                         <br />
                         Email : <a href="mailto:info@cembs.com">info@cembs.com</a>
                     </p>
@@ -258,7 +279,7 @@
                         CEM Business Solutions<br />
                         P.O.Box #51<br />
                         Doha Qatar<br />
-                        Tel: +974 300 75 145 | +974 7045 7680<br />
+                        Tel: +974 300 75 145<br />
                         Email : <a href="mailto:info@cembs.com">info@cembs.com</a>
                     </p>
                 </div>
@@ -269,7 +290,34 @@
                     </a>
                 </div>
             </div>
-        </div>
+     
+ <div class="location_div">
+                <div class="location_text">
+                    <h3>
+                        Kingdom of Saudi Arabia </h3>
+                    <p>
+                        CEM Business Solutions
+                        <br />
+                       
+                        Kingdom of Saudi Arabia.<br />
+                      
+
+                        Tel :  +971 508711015 | +974 30075145
+                     
+                        <br />
+                        Email : <a href="mailto:info@cembs.com">info@cembs.com</a>
+                    </p>
+                </div>
+                <div class="location_map">
+                    <a href="Maps/ksa.htm"
+                        rel="clearbox[height=420,,width=620,,scrolling=no]">
+                        <img src="Images/map_saudi_arabia.jpg" alt="CEM Business Solutions" />
+                    </a>
+                </div>
+            </div></div>
+
+
+
         <div id="t3" class="h_tab_content">
             <div class="location_div">
                 <div class="location_text">
@@ -283,7 +331,7 @@
                         Dagenham RM8 1BW
                         <br />
                         Essex<br />
-                        Tel : ++44 207 993 6483<br />
+                        Tel : +44 207 993 6483<br />
                         Email : <a href="mailto:info@cembs.com">info@cembs.com</a>
                     </p>
                 </div>

@@ -1,9 +1,71 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/AXPayroll/Support/MasterPage.master"
+﻿<%@ Page Title="" Language="C#" 
     AutoEventWireup="true" CodeFile="Index.aspx.cs" Inherits="AXPayroll_Support_Index" %>
+<%@ Register TagPrefix="footer" TagName="cem_footer" Src="~/UserControls/footer.ascx" %>
+<%@ Register TagName="extended" TagPrefix="menu" Src="~/UserControls/ExtendedMenu.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>CEM Business Solutions</title>
+   <link href="../../Styles/v3/common-style.css" rel="stylesheet" type="text/css" />
+   <link rel="icon" href="../../Images/titlelogo.png" type="image/png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+        function alertwindow(message) {
+            //debugger
+            alert(message);
+            window.location = 'Index.aspx';
+        }
+    </script>
+    <script src="../../clearbox.js" type="text/javascript"></script>
+    <!-- ajax tabs -->
+    <link href="../../Styles/tabmenu.css" rel="stylesheet" type="text/css" />
+    <script src="../../Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Default Action
+            $(".tab_content").hide(); //Hide all content
+            $("ul.tabs li:first").addClass("active").show(); //Activate first tab
+            $(".tab_content:first").show(); //Show first tab content
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
-
-       
+            //On Click Event
+            $("ul.tabs li").click(function () {
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //Add "active" class to selected tab
+                $(".tab_content").hide(); //Hide all tab content
+                var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+                $(activeTab).fadeIn(); //Fade in the active content
+                return false;
+            });
+        });
+    </script>
+    <!-- end ajax tabs -->
+    <script src="../../Scripts/sliding_social.js" type="text/javascript"></script>
+    <script src="../../Scripts/easyTooltip.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a#facebook").easyTooltip({
+                tooltipId: "easyTooltip_facebook",
+                content: '<h2>Facebook</h2>'
+            });
+            $("a#twitter").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Twitter</h2>'
+            });
+            $("a#flickr").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Flickr</h2>'
+            });
+            $("a#google").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>GooglePlus</h2>'
+            });
+            $("a#slideshare").easyTooltip({
+                tooltipId: "easyTooltip_twitter",
+                content: '<h2>Slideshare</h2>'
+            });
+        });
+    </script>    
 
     <style type="text/css">
         .div_content
@@ -34,10 +96,29 @@
         {
             height: 25px !important;
         }
+        ol, ul {
+    list-style:number !important;
+}
     </style>
+
     <link href="MaskPopup.css" rel="stylesheet" type="text/css" />
     <script src="Scripts/MaskPopup.js" type="text/javascript"></script>
     <link href="../../Styles/OthersPages/RequestFormTdStyles.css" rel="stylesheet" type="text/css" />
+         <link rel="icon" href="../../Images/titlelogo.png" type="image/png" />
+    <link href="../../autocomplete_src/demos.css" rel="stylesheet" type="text/css" />
+    <link href="../../autocomplete_src/jquery.ui.autocomplete.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/v3/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/jquery.ui.accordion.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+       <link href="../../Styles/v3/home-style.css" rel="stylesheet" type="text/css" />
+    <link href="../../Styles/mobile.css" rel="stylesheet" type="text/css" />
+        <script src="Scripts/RestrictEmail.js" type="text/javascript"></script>
+  
+    <link href="../../Styles/cem_styles.css" rel="stylesheet" type="text/css" />
+      <link href="../../Styles/services.css" rel="stylesheet" type="text/css" />
+
+
     <!-- end request form -->
     <style type="text/css">
         img
@@ -58,7 +139,7 @@
             padding-left: 15px;
         }
     </style>
-    <script src="Scripts/RestrictEmail.js" type="text/javascript"></script>
+
     <style type="text/css">
         td
         {
@@ -134,13 +215,166 @@
         {
             color: #0b76ba;
         }
+        .size-980 .line {
+    margin: 0 auto;
+    max-width: 77.25em;
+    padding: 0;
+}
+ol, ul {
+    list-style: decimal outside none !important;
+     line-height: 27px;
+}
+
+#mytable ol, ul {
+    line-height: 19px;
+    list-style: disc outside none !important;
+}
     </style>
-</asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
-    <%--<asp:Label ID="sessionlabel" runat="server" Text=""></asp:Label>--%>
+     
+</head>
+<body class="size-980"  runat="server">
+<div class="wrap">
+
+ <form id="form1" runat="server" >
+  <header>
+           <div class="navbar-link">
+    <div class="navbar-linktext">
+        Menu</div>
+    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle collapsed"
+        type="button">
+        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+        </span>
+    </button>
+</div>
+<header>
+    <div class="line">
+    <!-- Logo Section -->
+    <div class="logo-section">
+    <div class="cem_logo">
+        <a href="/"><img src="http://www.cembs.com/images/v3/logo.png" width="193" height="62" alt="CEM Business Solutions, ERP Consultant, MS Dynamics"/></a>
+    </div>
+    <div class="logo_rsec">
+        <%--<a href="http://us.cembs.com"><img src="http://www.cembs.com/images/uslink.jpg" id="unitedstates" width="178" height="62" alt="United States" border="0" style="margin-right: 30px;" /></a>--%>
+        <img src="http://www.cembs.com/images/v3/microsoft_gold_partner.jpg" id="gold" width="185" height="64" alt="Gold partner" style="margin-right: 10px;" />
+        <img src="http://www.cembs.com/images/v3/cfmd_logo.png" id="CFMD" width="123" height="64" alt="CFMD"/>
+    </div>
+    </div>
+<div class="top-nav navbar">
+    <div class="nav-container">
+        <div>
+            <label class="responsive_menu" for="responsive_menu">
+                <span>&nbsp;</span>
+            </label>
+            <input id="responsive_menu" type="checkbox">
+            <ul class="menu">
+                <li id="m_home"><a href="/">Home</a></li>
+                <li id="m_about"><a href="http://www.cembs.com/About-CEM.aspx">About CEM</a>
+                    <ul>
+                        <li><a href="http://www.cembs.com/Customers.aspx">Customers </a></li>
+                        <li><a href="http://www.cembs.com/Geo.aspx">Geographies</a></li>
+                        <%--<li><a href="Values.aspx">Our values</a></li>--%>
+                        <li><a href="http://www.cembs.com/CSR.aspx">Corporate Social Responsibility</a></li>
+                        <li><a href="http://www.cembs.com/OurAwards.aspx">Awards</a></li>
+                        <%--<li><a href="http://www.cembs.com/Relationship.aspx">Microsoft relationship</a></li>--%>
+                        <li><a href="http://www.cembs.com/CFMD.aspx">CfMD</a></li>
+                        <li><a href="http://www.cembs.com/Global.aspx">Global Installations</a></li>
+                    </ul>
+                </li>
+                <li id="m_products" class="dropdown"><a href="http://www.cembs.com/CEMProducts.aspx">CEM Products</a>
+                    <ul>
+                        <li><a href="http://www.cembs.com/Construction-Management-Software.aspx">CEM AX Construct</a></li>
+                        <li><a href="http://www.cembs.com/Human-Capital-Management.aspx">CEM AX HCM</a></li>
+                        <li><a href="http://www.cembs.com/Payroll-Software.aspx">CEM AX Payroll</a></li>
+                        <li><a href="http://www.cembs.com/Construction-Project-Management-Software.aspx">CEM AX ProjectPro</a></li>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-RMS.aspx">CEM AX Retail</a></li>
+                        <li><a href="http://www.cembs.com/CEM-AX-Union-Payroll.aspx">CEM AX Union Payroll</a></li>
+                    </ul>
+                </li>
+                <li id="m_services" class="dropdown"><a href="http://www.cembs.com/CEMServices.aspx">CEM Services</a>
+                    <%--<div class="columndrop">
+                        <div class="col">
+                            <ul>
+                                <h5>
+                                    &nbsp;</h5>
+                                <li><a href="Implementation-Services.aspx">ERP &amp; CRM Implementation</a></li>
+                                <!--<li><a href="Manpower-Staffing.aspx">Manpower augmentation</a></li>-->
+                                <li><a href="http://www.cembs.com/Upgrading-Microsoft-Dynamics.aspx">Upgrade</a></li>
+                                <li><a href="http://www.cembs.com/ERP-and-CRM-Support.aspx">ERP &amp; CRM Support</a></li>
+                                <li><a href="http://www.cembs.com/CRM-ERP-Migration-Services.aspx">Migration</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <ul>
+                                <h5>
+                                    &nbsp;</h5>
+                                <li><a href="http://www.cembs.com/Project-Management.aspx">Project Management</a></li>
+                                <li><a href="http://www.cembs.com/Outsourcing.aspx">Outsourcing</a></li>
+                                <li><a href="http://www.cembs.com/Product-Selection.aspx">Product Selection</a></li>
+                                <li><a href="http://www.cembs.com/Optimization.aspx">Optimization</a></li>
+                                <!--<li><a href="http://www.cemcloudservices.com" target="_blank">Cloud Services</a></li>-->
+                            </ul>
+                        </div>
+                    </div>--%>
+                    <ul>
+                        <li><a href="http://www.cembs.com/Implementation-Services.aspx">ERP &amp; CRM Implementation</a></li>
+                      <%--  <li><a href="http://www.cembs.com/Manpower-Staffing.aspx">Manpower augmentation</a></li>--%>
+                        <li><a href="http://www.cembs.com/Upgrading-Microsoft-Dynamics.aspx">Upgrade</a></li>
+                        <li><a href="http://www.cembs.com/ERP-and-CRM-Support.aspx">ERP &amp; CRM Support</a></li>
+                        <li><a href="http://www.cembs.com/CRM-ERP-Migration-Services.aspx">Migration</a></li>
+                      <%--  <li><a href="http://www.cembs.com/Project-Management.aspx">Project Management</a></li>--%>
+                        <li><a href="http://www.cembs.com/Outsourcing.aspx">Outsourcing</a></li>
+<%--                        <li><a href="http://www.cembs.com/Product-Selection.aspx">Product Selection</a></li>--%>
+                        <li><a href="http://www.cembs.com/Optimization.aspx">Optimization</a></li>
+                        <!--<li><a href="http://www.cemcloudservices.com" target="_blank">Cloud Services</a></li>-->
+                    </ul>
+                </li>
+                <li id="m_dproducts" class="dropdown"><a href="http://www.cembs.com/DynamicsProducts.aspx">Dynamics Products</a>
+                    <ul>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-AX.aspx">Dynamics AX</a></li>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-CRM.aspx">Dynamics CRM</a></li>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-GP.aspx">Dynamics GP</a></li>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-Nav.aspx">Dynamics NAV</a></li>
+                        <li><a href="http://www.cembs.com/Microsoft-Dynamics-SL.aspx">Dynamics SL</a></li>
+                    </ul>
+                </li>
+                <li id="m_industries" class="dropdown"><a href="http://www.cembs.com/Industries.aspx">Industries<!--ˇ--></a>
+                    <ul>
+                        <li><a href="http://www.cembs.com/Construction-Management.aspx">Construction</a></li>
+                        <li><a href="http://www.cembs.com/Contract-Software.aspx">Contracting</a></li>
+                        <li><a href="http://www.cembs.com/Project-Management-Software.aspx">Projects</a></li>
+                        <li><a href="http://www.cembs.com/Retail-Management.aspx">Retail</a></li>
+                        <li><a href="http://www.cembs.com/Oil-companies.aspx">Oil &amp; Gas</a></li>
+                        <li><a href="http://www.cembs.com/Trading.aspx">Trading</a></li>
+                        <li><a href="http://www.cembs.com/Logistics.aspx">Logistics / Distribution</a></li>
+                        <li><a href="http://www.cembs.com/ProfessionalServices.aspx">Professional Services</a></li>
+                        <li><a href="http://www.cembs.com/ERP-for-Manufacturing.aspx">Manufacturing</a></li>
+                        <li><a href="http://www.cembs.com/Group-Companies.aspx">Group Companies</a></li>
+                    </ul>
+                </li>
+                <li id="m_blog"><a href="http://www.cembs.com/blog/">Blog</a></li>
+                <li id="m_careers"><a href="http://www.cembs.com/Careers/">Careers</a></li>
+                <li id="m_contact"><a href="http://www.cembs.com/Contactus.aspx">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+           
+                <menu:extended ID="extended" runat="server" />
+             </div>
+    <!-- Banner Section --> 
+</header>
+            <!-- Banner Section -->        
+        </header>
+
+
+<div  id="wrapper">
+
+   
+  <%--<asp:Label ID="sessionlabel" runat="server" Text=""></asp:Label>--%>
     <a href="" runat="server" id="sessionlabel"></a>
     <asp:DropDownList ID="domainlist" Style="display: none; position: absolute;" runat="server">
     </asp:DropDownList>
+    <div class="content_div">
     <div id="boxes">
         <!-- Start of Login Dialog -->
         <div id="dialog1" class="window">
@@ -281,18 +515,14 @@
     <div class="container" style="width: 970px">
         <div class="div_content">
             <h1>
-                Contact Support Steps</h1>
+            Contact Support Steps
+            </h1>
             <p>
-                For end-users it is of great importance to include your Value Added Reseller (VAR)
-                on support related issues. This will ensure that they are aware of your situation
-                with our products and of any fixes we provide, which will enable them to provide
-                better support to you in the future. Additionally they can help you mediate the
-                steps below to speed up the time it takes to resolve any issues.<br />
-                In efforts to speed along the support process, please follow the steps below.</p>
+             It is important for an end-user to include their Value Added Reseller (VAR) on support related issues. This will ensure that VAR is aware of both your situation and our products with the fixes we provide. This will enable them to provide you better support in the future. Additionally they can assist you with the steps below to speed up the resolving time in case of any issue.<br />
+           To speed up the support process, please follow the steps below.</p>
             <ol>
                 <li>Contact your Microsoft Dynamics AX Value Added Reseller (VAR).</li>
-                <li>Check the Product Documentation &amp; Previous issue logs to confirm proper procedures
-                    were followed.</li>
+                <li>Check the Product Documentation & Previous issue logs to confirm that proper procedures were followed.</li>
             </ol>
             <ol start="2" type="1">
                 <ol start="1" type="1">
@@ -308,14 +538,13 @@
             <ol start="3" type="1">
                 <ol start="1" type="1">
                     <ol start="1" type="1">
-                        <li>Disable the CEM Product – remove the license file from partner features set from
-                            the Microsoft Dynamics AX and use only standard AX windows and reports</li>
+                        <li>Disable the CEM Product – remove the license file of partner features set from Microsoft Dynamics AX and use only standard AX windows and reports</li>
                         <li>Run some tests</li>
                     </ol>
                 </ol>
             </ol>
             <ol start="4" type="1">
-                <li>Reproduce and document the issue, capturing the following information:</li>
+                <li>Reproduce and document the issue capturing the following information:</li>
             </ol>
             <ol start="4" type="1">
                 <ol start="1" type="1">
@@ -327,25 +556,23 @@
                 </ol>
             </ol>
             <ol start="5" type="1">
-                <li>Send the captured information along with the following additional information in
-                    an email to&nbsp;<a class="blue" href="mailto:payrollsupport@cembs.com">payrollsupport@cembs.com</a></li>
+                <li>Send the captured information along with the following additional information in an email to 
+                  &nbsp;<a class="blue" href="mailto:payrollsupport@cembs.com">payrollsupport@cembs.com</a></li>
             </ol>
             <ol start="5" type="1">
                 <ol start="1" type="1">
                     <ol start="1" type="1">
                         <li>Name of the VAR</li>
-                        <li>Name of you, the end user</li>
-                        <li>Name(s) of the CEM Business Solutions’ products and/or customization(s)</li>
-                        <li>Build number(s) of the CEM’s products</li>
-                        <li>Version and service pack of Microsoft Dynamics AX from&nbsp;<em>Help &gt;&gt; About
-                            Microsoft Dynamics AX…</em></li>
+                        <li>End user name</li>
+                        <li>Name(s) of CEM Business Solutions’ products and/or customization(s)</li>
+                        <li>Build number(s) of CEM’s products</li>
+                        <li>	Version and service pack of Microsoft Dynamics AX from &nbsp;<em>Help &gt;&gt; About Microsoft Dynamics AX…</em></li>
                     </ol>
                 </ol>
             </ol>
-            &gt;&gt; After these steps have been completed please email&nbsp;<a class="blue"
-                style="color: #0b76ba;" href="mailto:payrollsupport@cembs.com">payrollsupport@cembs.com</a>
-            or call us at <span style="color: #0b76ba;">+971 4 3911683</span> &amp; <span style="color: #0b76ba;">
-                +971 6 5734700</span>.
+            &gt;&gt; You can also call us at 
+   <span style="color: #0b76ba;">+971 4 3911683</span> &amp; <span style="color: #0b76ba;">
+               +971 6 5734700</span>.
             <br />
             <br />
             <h1>
@@ -385,18 +612,17 @@
                         1
                     </td>
                     <td width="206" valign="top">
-                        <ul class="ul_reasons">
-                            <li>Critical business impact: </li>
-                            <li>Customer has complete loss of a core (mission critical) business process and work
-                                cannot reasonably continue</li>
-                            <li>Needs immediate attention</li>
+                        <ul class="ul_reasons" style="list-style-type:none">
+                            <li style="list-style-type:none">Critical business impact: </li>
+                            <li style="list-style-type:none">Customer has complete loss of core (mission critical) business process and cannot continue operations</li>
+<li style="list-style-type:none">Needs immediate attention</li>
                         </ul>
                     </td>
                     <td width="180" valign="top">
-                        <ul>
+                        <ul >
                             <li>CEM Resources at customer site as soon as possible.</li>
                             <li>Rapid Escalation within CEM to support team </li>
-                            <li>Notification of Senior Executives at CEM</li>
+                            <li>Notification to Senior Executives at CEM</li>
                             <li>1st call response in 4 hours or less </li>
                         </ul>
                     </td>
@@ -424,11 +650,10 @@
                         2
                     </td>
                     <td width="206" valign="top">
-                        <ul>
-                            <li>Moderate business&nbsp; impact: </li>
-                            <li>Customer’s business has moderate loss or degradation of services but work can reasonably
-                                continue in an impaired manner.</li>
-                            <li>Needs attention within 4 hours</li>
+                        <ul style="list-style-type:none">
+                            <li style="list-style-type:none">Moderate business impact: </li>
+                            <li style="list-style-type:none">Customer’s business has moderate loss or degradation of services but work can reasonably continue in an impaired manner.</li>
+                            <li style="list-style-type:none">Needs attention within 4 hours</li>
                         </ul>
                     </td>
                     <td width="180" valign="top">
@@ -461,10 +686,9 @@
                     </td>
                     <td width="206" valign="top">
                         <ul>
-                            <li>Minimum business impact: </li>
-                            <li>Customer’s business is substantially functioning with minor or no impediments of
-                                services.</li>
-                            <li>Needs attention within 8 hours</li>
+                            <li style="list-style-type:none">Minimum business impact: </li>
+                            <li style="list-style-type:none">Customer’s business is substantially functioning with minor or no impediments of services</li>
+                            <li style="list-style-type:none">Needs attention within 8 hours</li>
                         </ul>
                     </td>
                     <td width="180" valign="top">
@@ -591,8 +815,7 @@
             <br />
             <br />
             <p class="MsoNormal">
-                We assure our customers that as Microsoft adds new features, our solution will be
-                upgraded and our customers can install the latest solution and enjoy the new features.
+              We assure our customers that, as Microsoft introduces new features, our solution will be upgraded and you can install the latest version of solution and enjoy new features.
             </p>
             <a href="" class="downloadlink" style="cursor: pointer; color: #0b76ba;" name="modal"
                 id="doc" runat="server">Please click here to download FAQ document.</a>
@@ -604,4 +827,11 @@
                 displaytext='Email'></span>
         </div>
     </div>
-</asp:Content>
+    </div>
+ 
+
+    </div>    
+       </form>    </div>
+   </body>
+      </html>
+

@@ -12,8 +12,7 @@
 <%@ Register TagName="servicesusercontrol" TagPrefix="projectmanagement" Src="~/ServicesUsercontrols/projectmanagement.ascx" %>
 <%@ Register TagName="servicesusercontrol" TagPrefix="projectselection" Src="~/ServicesUsercontrols/projectselection.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-    <title>MS Dynamics Outsourcing Services India | Microsoft Dynamics Outsourcing partner
-        UAE</title>
+    <title>CEMBS | MS Dynamics Outsourcing Services India </title>
     <meta name="description" content="CEM, with over a decade of experience strives to provide Microsoft Dynamics based outsourcing services to our customers across the world as a pro-active Endeavour to enhance client performance and lower the labour cost investment. " />
     <meta name="keywords" content="Microsoft Dynamics Outsourcing,
 Erp & Crm Outsourcing,

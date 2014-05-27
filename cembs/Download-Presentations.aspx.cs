@@ -71,7 +71,9 @@ public partial class Download_Presentations : System.Web.UI.Page
             website = string.Empty;
         }
         //creating object of mailclass from mailclass.cs
-        string Automessage = "Dear " + name + ".<br/>Thanks a bunch for proving your interest with CEM! <br/><br/>Best regards<br/>Arokia Bakkianathan L<br/>Manager – Social Media<br/>CEM Business Solutions<br/>Email: arokia@cembs.com";
+        string Automessage = "Dear " + name + ".<br/><br/>Thank you for your interest in CEM. Hope you got what you were looking for! Our representative will get in touch with you shortly.<br/><br/> CEM Business Solutions<br/>";
+
+
         client1.maildownloadsAsync(name, to, cc, "CEM Business Solutions", email, casestudy.Value, requestdate, formname);
         client1.AutomessageAsync(email, name, "CEM Business Solutions", Automessage);
         client1.InsertQuoteAsync(name, "", "", "", "", email, "Case: " + casestudy.Value, requestdate, formname);

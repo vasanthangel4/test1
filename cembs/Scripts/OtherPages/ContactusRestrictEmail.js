@@ -44,7 +44,8 @@ $(document).ready(function () {
         var lastname = holdernametext.split('@')[1];
 
         if (getmailids.inArray(lastname)) {
-			alert('enter only official mail id');
+            $('#layout_ContentPlaceholder_MailExpressionValidator').text('enter only official mail id');
+            $('#layout_ContentPlaceholder_MailExpressionValidator').style('display:inline;')
             //$('#maildiv').show('slow');
             $('#layout_ContentPlaceholder_submit').attr("disabled", "disabled");
             //return false;

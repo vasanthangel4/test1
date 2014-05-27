@@ -4,16 +4,30 @@
 <%@ Register TagName="usercontrol_quicklinks" TagPrefix="quicklinks" Src="~/UserControls/quicklinks.ascx" %>
 <%@ Register TagName="location_contact" TagPrefix="location" Src="location_tabs.ascx" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="layout_head" runat="Server">
-    <title>CEM Business Solutions (P) Ltd | Tel : +91 44 33083800, +993 0707 999, +971 4
-        3911683 </title>
+    <title>CEM Business Solutions</title>
     <meta name="description" content="CEM Business Solutions , Microsoft dynamic software’s in Chennai, Mumbai, India, Dubai, Kuwait, Sharjah, USA, Singapore, UK" />
     <meta name="keywords" content="cem tel, cem telephone, Du Offices In Sharjah, cem contact number, cem phone number, cem address, cem USA address, cem Dubai address, Dynamics Ax Partner Address In Uae, Dynamics Gp Address Partner In Uae, Microsoft Dynamics address in Abu Dhabi, Microsoft Partner contact details, Microsoft Dynamics Solution provider contact numbers, Microsoft Dynamics Solutions contact details in Sharjah, Microsoft Dynamics Solutions Dubai phone numbers, microsoft erp partners contact information" />
     <script src="Scripts/jquery.js" type="text/javascript"></script>
     <script type="text/javascript" src="Scripts/uiTabsFirstItem.js"></script>
-    <script type="text/javascript">        $(document).ready(function () {
+      <!-- end request form -->
+    <!-- using service for checking mail ids -->
+    <script type="text/javascript" src="Scripts/OtherPages/ContactusRestrictEmail.js"></script>
+    <!-- end mail ids -->
+    <link href="Styles/contact.css" rel="stylesheet" type="text/css" />
+    <!-- location tabs -->
+    <link href="Styles/tabmenu_horizontal.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/OthersPages/locationtabs.css" rel="stylesheet" type="text/css" />
+    <!-- end location tabs -->
+    <script type="text/javascript">      
+      $(document).ready(function () {
             $('#m_contact').addClass('bluebg');
         });
     </script>
+    <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+
 
     <!-- tool tip -->
     <!-- end tooltip -->
@@ -34,15 +48,7 @@
             line-height: 1.5em;
         }
     </style>
-    <!-- end request form -->
-    <!-- using service for checking mail ids -->
-    <script type="text/javascript" src="Scripts/OtherPages/ContactusRestrictEmail.js"></script>
-    <!-- end mail ids -->
-    <link href="Styles/contact.css" rel="stylesheet" type="text/css" />
-    <!-- location tabs -->
-    <link href="Styles/tabmenu_horizontal.css" rel="stylesheet" type="text/css" />
-    <link href="Styles/OthersPages/locationtabs.css" rel="stylesheet" type="text/css" />
-    <!-- end location tabs -->
+  
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="layout_ContentPlaceholder" runat="Server">
     <%--<div class="common_banners">
@@ -89,6 +95,12 @@
                                         <asp:TextBox ID="CompanyTextBox" runat="server" CausesValidation="True"></asp:TextBox>
                                         <asp:RequiredFieldValidator ID="CompanyValidator" runat="server" Display="Dynamic"
                                             ErrorMessage="*" SetFocusOnError="True" ControlToValidate="CompanyTextBox" ForeColor="Red"></asp:RequiredFieldValidator>
+                      <br />
+                                        <label>
+                                            Country*</label>
+                                        <asp:TextBox ID="countrytextbox" runat="server" CausesValidation="True"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" Display="Dynamic"
+                                            ErrorMessage="*" SetFocusOnError="True" ControlToValidate="countrytextbox" ForeColor="Red"></asp:RequiredFieldValidator>
                                         <br />
                                         <label>
                                             Contact*</label>
@@ -102,7 +114,8 @@
                                         <span style="color: #ff0000; display: none;" id="maildiv">Only official mailid</span>
                                         <asp:RequiredFieldValidator ID="MailValidator" runat="server" Display="Dynamic" ErrorMessage="*"
                                             SetFocusOnError="True" ControlToValidate="MailTextBox" ForeColor="Red"></asp:RequiredFieldValidator>
-                                        &nbsp;<asp:RegularExpressionValidator ID="MailExpressionValidator" runat="server"
+                                        &nbsp;
+                                  <asp:RegularExpressionValidator ID="MailExpressionValidator" runat="server"
                                             ControlToValidate="MailTextBox" Display="Dynamic" ErrorMessage="Enter a valid mail ID"
                                             SetFocusOnError="True" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
                                             ForeColor="Red"></asp:RegularExpressionValidator>
@@ -135,16 +148,17 @@
                             <div class="india">
                                 <div style="position: absolute">
                                     <a title="" href="#" id="india">
-                                        <asp:Image ID="Image2" runat="server" CssClass="noborder" ImageUrl="Images/india.png" />
+<asp:Image ID="Image2" runat="server" CssClass="noborder" ImageUrl="Images/india.png" />
                                     </a>
                                 </div>
                             </div>
                             <div class="uae">
                                 <div style="position: absolute">
                                     <a title="" href="#" id="uae">
-                                        <asp:Image ID="Image4" runat="server" CssClass="noborder" ImageUrl="Images/uae.png" />
+                     <asp:Image ID="Image4" runat="server" CssClass="noborder" ImageUrl="Images/uae.png" />
                                     </a>
                                 </div>
+
                             </div>
                             <div class="us">
                                 <div style="position: absolute">
